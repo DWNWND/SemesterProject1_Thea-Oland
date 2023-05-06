@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  overscroll-behavior: none;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */
+header {
+  position: relative;
+  padding: 20px;
+  max-width: 100%;
+  background: #10092c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 300px;
+} /* margin-bottom er midlertidig */
+.menu_icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+#menu_checkbox {
+  display: none;
+}
+#menu_checkbox:checked ~ nav {
+  display: block;
+} /* checked - not working */
+
+.links_header {
+  font-family: "Lexend Zetta";
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.085em;
+  /* text-decoration-line: underline; */
+  text-transform: uppercase;
+  color: #10092c;
+  background-color: #d3becd;
+}
+.logo {
+  background: no-repeat url(../logo-btn/logo_mobile_white.png);
+  width: 71px;
+  height: 33px;
+  background-size: 71px 33px;
+}
+/*-DROP-DOWN-MENU-*/
+.nav_header {
+  position: absolute;
+  left: 0;
+  background: #d3becd;
+  top: 70px;
+  padding-top: 5px;
+  width: 100%;
+}
+.nav_header a {
+  padding: 10px 20px;
+}
+.menu_dropdown {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: normal;
+  flex-wrap: wrap;
+}
+.btn_home {
+  color: #fff;
+  font-family: "Iceland";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
+}
+.openinghours {
+  padding: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  width: 100%;
+  list-style-type: none;
+  font-family: "Iceland";
+  font-size: 16px;
+  letter-spacing: 0.085em;
+  line-height: 120%;
+  color: #ffffff;
+}
+footer {
+  background: 100% no-repeat url(../images/footer_background.jpg);
+  padding: 2rem;
+}
+.label_footer {
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.085em;
+  color: #ffffff;
+}
+.nav_footer a {
+  display: block;
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #10092c;
+}
+.nav_footer {
+  margin: 2rem 0;
+}
+.logo_footer {
+  width: 35%;
+}

@@ -8,18 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/279950e6bf.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
-      <a href="home.html">Home</a>
-      <img src=" "logo">
+      <a href="home.html" class="btn_home">Home</a>
+      <div class="logo"></div>
+      <div class="menu_wrapper">
+        <input type="checkbox" id="menu_checkbox" />
+        <label for="menu_checkbox" class="menu_icon" alt="Hamburgermenu"><i class="fa-solid fa-bars"></i></label>
+        <nav class="nav_header">
+          <div class="menu_dropdown">
+            <a href="home.html" class="links_header">Home</a>
+            <a href="eventsandexhibitions.html" class="links_header">Events and exhibitions</a>
+            <a href="visitus.html" class="links_header">Visit us</a>
+            <a href="contactus.html" class="links_header">Contact us</a>
+            <a href="getinvolved.html" class="links_header">Get involved</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main></main>
-    <footer></footer>
+    <footer>
+      <label for="openinghours" class="label_footer">Opening hours</label>
+      <ul class="openinghours">
+        <li>Monday: Closed</li>
+        <li>Tuesday - Thursday: 10:00 – 16:00</li>
+        <li>Friday: 10:00 – 19:00</li>
+        <li>Saturday: 9:00 – 16:00</li>
+        <li>Sunday: 9:00 – 13:00</li>
+      </ul>
+      <nav class="nav_footer">
+        <a href="eventsandexhibitions.html" class="links_footer">Events and exhibitions</a>
+        <a href="visitus.html" class="links_footer">Visit us</a>
+        <a href="aboutus.html" class="links_footer">About us</a>
+        <a href="getinvolved.html" class="links_footer">Get involved</a>
+        <a href="#" class="links_footer">FAQ</a>
+      </nav>
+      <img src="logo-btn/logo_big_footer.png" class="logo_footer" alt="logo" />
+      <!-- add SOME -->
+    </footer>
   </body>
 </html>
