@@ -2,8 +2,56 @@ body {
   margin: 0;
   overscroll-behavior: none;
 }
+h1 {
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+p {
+  font-family: "Inria Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.085em;
+}
 a {
   text-decoration: none;
+}
+.quote {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.085em;
+  color: #4a4f96;
+  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+}
+.bold {
+  font-weight: 800;
+}
+.italic {
+  font-style: italic;
+}
+.hide-in-mobile,
+#menu_checkbox,
+.nav_header {
+  display: none;
 }
 
 /* HEADER */
@@ -18,54 +66,6 @@ header {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.menu_icon {
-  font-size: 1.5rem;
-  color: #fff;
-}
-#menu_checkbox {
-  display: none;
-}
-#menu_checkbox:checked ~ nav {
-  display: block;
-}
-
-.links_header {
-  font-family: "Lexend Zetta";
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-align: center;
-  letter-spacing: 0.085em;
-  /* text-decoration-line: underline; */
-  text-transform: uppercase;
-  color: #10092c;
-  background-color: #d3becd;
-}
-.logo {
-  background: no-repeat url(../logo-btn/logo_mobile_white.png);
-  width: 71px;
-  height: 33px;
-  background-size: 71px 33px;
-}
-.nav_header {
-  position: absolute;
-  left: 0;
-  background: #d3becd;
-  top: 73px;
-  /* padding-top: 5px; */
-  width: 100%;
-  display: none;
-}
-.nav_header a {
-  padding: 10px 20px;
-}
-.menu_dropdown {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: normal;
-  flex-wrap: wrap;
-}
 .btn_home {
   color: #fff;
   font-family: "Iceland";
@@ -76,11 +76,55 @@ header {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
 }
+.logo {
+  background: no-repeat url(../logo-btn/logo_mobile_white.png);
+  width: 71px;
+  height: 33px;
+  background-size: 71px 33px;
+}
+.menu_wrapper {
+  padding-left: 16.7px;
+}
+.menu_icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+#menu_checkbox:checked ~ nav {
+  display: block;
+}
+.nav_header {
+  position: absolute;
+  left: 0;
+  background: #d3becd;
+  top: 73px;
+  width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.1);
+}
+.nav_header a {
+  padding: 10px 20px;
+  font-family: "Lexend Zetta";
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #10092c;
+  background-color: #d3becd;
+}
+.menu_dropdown {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: normal;
+  flex-wrap: wrap;
+}
 
-/* footer */
+/* FOOTER */
 footer {
   background: 100% no-repeat url(../images/footer_background.jpg);
   padding: 2rem;
+  background-position: top;
 }
 .openinghours {
   padding: 0px;
@@ -114,60 +158,47 @@ label[for="openinghours"] {
 label[for="openinghours"] {
   color: #ffffff;
 }
+.logo-some_footer {
+  text-align: center;
+  padding-top: 2rem;
+}
 .logo_footer {
   width: 35%;
+  display: block;
+  margin: auto;
 }
-
-/* GLOBAL */
-h1 {
-  font-family: "Koulen";
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 45px;
-  text-align: center;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
+.logo-some_footer a {
+  padding: 0.5rem;
+  margin: 2rem 0.5rem;
+  display: inline-block;
 }
-h2 {
-  font-family: "Koulen";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-  margin: 0.5rem;
+.fa-brands {
+  font-size: 2rem;
+  color: #301d79;
 }
-p {
-  font-family: "Inria Sans";
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 23px;
-  letter-spacing: 0.085em;
-}
-.quote {
-  font-family: "Iceland";
+/* SECTIONS */
+.slogan_hero {
+  font-family: "Lexend Zetta";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
+  font-size: 11px;
+  line-height: 14px;
   text-align: center;
   letter-spacing: 0.085em;
-  color: #4a4f96;
-  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+  text-transform: uppercase;
+  padding: 3.5rem 0 20rem 0;
+  color: #ffffff;
 }
-.bold {
-  font-weight: 800;
+.section_this-month {
+  background: 100% no-repeat url(../images/hero_background.jpg);
+  background-position: top;
+  background-size: 200%;
 }
-.italic {
-  font-style: italic;
-}
-.section_explore h1 {
-  color: #301d79;
-}
-.section_explore .quote {
-  color: #301d79;
-  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+.section_this-month img {
+  width: 207px;
+  height: 207px;
+  border: 5px solid #f3edf9;
+  border-radius: 50%;
 }
 .card_this-month {
   color: #fff;
@@ -178,43 +209,11 @@ p {
   padding-top: 3rem;
   background: #10092c;
 }
-.section_this-month img {
-  width: 207px;
-  height: 207px;
-  border: 5px solid #f3edf9;
-  border-radius: 50%;
-}
 .wrapper_this-month-h1 {
   background: #f3edf9;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   padding: 1rem;
   margin: 0;
-}
-.btn-background_1 {
-  background: #10092c;
-  padding: 2rem;
-}
-.btn-background_2 {
-  background: 100% no-repeat url(../images/unsplash_j-eOUoVUmQQ.jpg);
-}
-.btn_big {
-  background: no-repeat url(../logo-btn/BTN_big.png);
-  width: 260px;
-  height: 45px;
-  background-size: 260px 45px;
-  margin: 0 auto;
-}
-.btn_text {
-  font-family: "Lexend Zetta";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 25px;
-  display: flex;
-  position: relative;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-  color: #10092c;
 }
 .section_this-month a {
   font-family: "Lexend Zetta";
@@ -226,14 +225,9 @@ p {
   text-decoration-line: underline;
   color: #ffffff;
 }
-.hide-in-mobile {
-  display: none;
-}
-.card_explore a {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+hr {
+  border: 5px solid #f3edf9;
+  margin: 0;
 }
 .section_explore {
   padding: 2rem 1rem;
@@ -246,18 +240,27 @@ p {
   border-radius: 50px 50px 0px 50px;
   margin: 3rem 0;
 }
+.card_explore h1 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  color: #301d79;
+}
 .card_explore .quote {
   background: radial-gradient(#e1f2d4 52.14%, rgba(216, 212, 242, 0) 99.08%), #f3edf9;
   padding: 1.5rem 1rem;
   text-transform: uppercase;
+  color: #301d79;
+  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
 }
 .card_explore p {
   padding: 0 1.5rem;
   margin: 0 0 1.5rem 0;
 }
-.card_explore h1 {
-  padding: 0;
-  margin: 0 0 1rem 0;
+.card_explore a {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 .card-from-right {
   border-radius: 50px 50px 0px 50px;
@@ -265,7 +268,30 @@ p {
 .card-from-left {
   border-radius: 50px 50px 50px 0px;
 }
-hr {
-  border: 5px solid #f3edf9;
-  margin: 0;
+/* BTN */
+.btn_big {
+  padding: 1em 2em;
+  border: 2px solid #10092c;
+  background: #fff;
+  box-shadow: -0.5rem 0.5rem 0 #d3becd;
+}
+.btn_text {
+  font-family: "Lexend Zetta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 25px;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #10092c;
+}
+.btn-background_1 {
+  background: #10092c;
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+.btn-background_2 {
+  background: 100% no-repeat url(../images/unsplash_j-eOUoVUmQQ.jpg);
+  padding: 2rem;
+  text-align: center;
 }
