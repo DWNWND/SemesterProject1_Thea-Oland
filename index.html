@@ -8,15 +8,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/279950e6bf.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <a href="home.html" class="btn_home">Home</a>
+      <div class="logo"></div>
+      <div class="menu_wrapper">
+        <input type="checkbox" id="menu_checkbox" />
+        <label for="menu_checkbox" class="menu_icon" alt="Hamburgermenu"><i class="fa-solid fa-bars"></i></label>
+        <nav class="nav_header">
+          <div class="menu_dropdown">
+            <a href="home.html">Home</a>
+            <a href="eventsandexhibitions.html">Events and exhibitions</a>
+            <a href="visitus.html">Visit us</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="getinvolved.html">Get involved</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section_this-month">
+        <div class="slogan_hero">Lets explore together</div>
+        <h1 class="wrapper_this-month-h1">This month at the museum:</h1>
+        <div class="card_this-month">
+          <img src="images/given_andrew-ruiz-348421.jpg" alt="Picture of an astronaut in a space rocket simulator" />
+          <h2>The future of aeronautics</h2>
+          <p class="italic hide-in-mobile">Prof Sheila Widnall from the Massachusetts Institute of Technology on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <hr />
+        <div class="card_this-month">
+          <img src="images/given_toa-heftiba-412579.jpg" alt="Picture of the dinosaur sceleton hanging at the museum" />
+          <h2>A night at the museum</h2>
+          <p class="italic hide-in-mobile">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <hr />
+        <div class="card_this-month">
+          <img src="images/given_scientific-2040795_1280.jpg" alt="Picture of a scientist doing laboratory research" />
+          <h2>Energetica exhibition</h2>
+          <p class="italic hide-in-mobile">On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </section>
+      <div class="btn-background_1">
+        <a href="eventsandexhibitions.html" class="btn_big btn_text"><label for="btn">Explore exhibitions</label></a>
+      </div>
+      <section class="section_explore">
+        <div class="card_explore card-from-right">
+          <h1>Young stars club</h1>
+          <p class="quote">Explore science together</p>
+          <p><span class="bold">Young Stars club</span> meets once a week on a <span class="bold">Saturday between 10:00 and 13:00</span> where you’ll get to explore and experiment with our team of experts!</p>
+          <p>During the school holidays we run <span class="bold">special holiday clubs</span> where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore.</p>
+          <p>To find out more, <a href="contactus.html">send us a message</a> or <a href="visitus.html">come down for a visit</a>!</p>
+        </div>
+        <div class="card_explore card-from-left">
+          <h1>Bring your school</h1>
+          <p class="quote">Get out of the classroom</p>
+          <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
+        </div>
+        <div class="card_explore card-from-right">
+          <h1>Join our lab</h1>
+          <p class="quote">Teaming up on research</p>
+          <p>Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country. Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+        </div>
+      </section>
+      <div class="btn-background_2"><a href="#" class="btn_big btn_text">Subscribe to our newsletter</a></div>
+    </main>
+    <footer>
+      <label for="openinghours">Opening hours</label>
+      <ul class="openinghours">
+        <li>Monday: Closed</li>
+        <li>Tuesday - Thursday: 10:00 – 16:00</li>
+        <li>Friday: 10:00 – 19:00</li>
+        <li>Saturday: 9:00 – 16:00</li>
+        <li>Sunday: 9:00 – 13:00</li>
+      </ul>
+      <nav class="nav_footer">
+        <a href="eventsandexhibitions.html">Events and exhibitions</a>
+        <a href="visitus.html">Visit us</a>
+        <a href="aboutus.html">About us</a>
+        <a href="getinvolved.html">Get involved</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <div class="logo-some_footer">
+        <img src="logo-btn/logo_big_footer.png" class="logo_footer" alt="logo" /><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"> <i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
