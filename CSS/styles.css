@@ -17,8 +17,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-bottom: 300px;
-} /* margin-bottom er midlertidig */
+}
 .menu_icon {
   font-size: 1.5rem;
   color: #fff;
@@ -28,7 +27,7 @@ header {
 }
 #menu_checkbox:checked ~ nav {
   display: block;
-} /* checked - not working */
+}
 
 .links_header {
   font-family: "Lexend Zetta";
@@ -51,9 +50,10 @@ header {
   position: absolute;
   left: 0;
   background: #d3becd;
-  top: 70px;
-  padding-top: 5px;
+  top: 73px;
+  /* padding-top: 5px; */
   width: 100%;
+  display: none;
 }
 .nav_header a {
   padding: 10px 20px;
