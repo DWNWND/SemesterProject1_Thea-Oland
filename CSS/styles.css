@@ -33,7 +33,6 @@ a {
 }
 .quote {
   font-family: "Iceland";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
@@ -83,7 +82,7 @@ header {
   background-size: 71px 33px;
 }
 .menu_wrapper {
-  padding-left: 16.7px;
+  padding-right: 16.7px;
 }
 .menu_icon i {
   font-size: 1.5rem;
@@ -125,6 +124,7 @@ footer {
   background: 100% no-repeat url(../images/footer_background.jpg);
   padding: 2rem;
   background-position: top;
+  background-size: cover;
 }
 .openinghours {
   padding: 0px;
@@ -179,7 +179,6 @@ label[for="openinghours"] {
 /* SECTIONS */
 .slogan_hero {
   font-family: "Lexend Zetta";
-  font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 14px;
@@ -193,6 +192,9 @@ label[for="openinghours"] {
   background: 100% no-repeat url(../images/hero_background.jpg);
   background-position: top;
   background-size: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section_this-month img {
   width: 207px;
@@ -205,19 +207,20 @@ label[for="openinghours"] {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 4rem;
-  padding-top: 3rem;
+  gap: 1rem;
+  padding: 3rem 1rem 4rem 1rem;
   background: #10092c;
+  min-width: 400px;
 }
 .wrapper_this-month-h1 {
   background: #f3edf9;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   padding: 1rem;
   margin: 0;
+  min-width: 400px;
 }
 .section_this-month a {
   font-family: "Lexend Zetta";
-  font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 14px;
@@ -225,20 +228,21 @@ label[for="openinghours"] {
   text-decoration-line: underline;
   color: #ffffff;
 }
-hr {
-  border: 5px solid #f3edf9;
-  margin: 0;
-}
 .section_explore {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   background: #f3edf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card_explore {
   background: #fff;
   padding: 1.5rem 0 0.5rem 0;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   border-radius: 50px 50px 0px 50px;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
+  max-width: 400px;
+  height: 450px;
 }
 .card_explore h1 {
   padding: 0;
@@ -273,11 +277,9 @@ hr {
   padding: 1em 2em;
   border: 2px solid #10092c;
   background: #fff;
-  box-shadow: -0.5rem 0.5rem 0 #d3becd;
 }
 .btn_text {
   font-family: "Lexend Zetta";
-  font-style: normal;
   font-weight: 500;
   font-size: 10px;
   line-height: 25px;
@@ -287,11 +289,73 @@ hr {
 }
 .btn-background_1 {
   background: #10092c;
-  padding: 2rem 0 4rem 0;
+  padding: 3rem 2rem;
   text-align: center;
 }
 .btn-background_2 {
   background: 100% no-repeat url(../images/unsplash_j-eOUoVUmQQ.jpg);
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 400px) {
+  .btn-background_1 {
+    background: 100% no-repeat url(../images/pixabay_dna-3539309_1280_1.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #d3becd;
+  }
+  .section_this-month {
+    background-color: #f3edf9;
+  }
+}
+@media (min-width: 450px) {
+  .section_this-month {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 500px) {
+  footer {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  .logo_footer {
+    width: 25%;
+  }
+}
+@media (min-width: 800px) {
+  .section_this-month {
+    background-size: contain;
+  }
+}
+@media (min-width: 1000px) {
+  .this-month_flex {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .card_this-month {
+    min-width: 270px;
+    max-width: 270px;
+  }
+  .wrapper_this-month-h1 {
+    background: none;
+    color: #fff;
+    box-shadow: none;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  .section_explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .card_explore {
+    max-width: 400px;
+    min-width: 300px;
+    height: 520px;
+  }
 }
