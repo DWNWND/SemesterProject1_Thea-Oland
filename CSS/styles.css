@@ -5,6 +5,7 @@ body {
 a {
   text-decoration: none;
 }
+
 /* HEADER */
 header {
   position: relative;
@@ -46,7 +47,6 @@ header {
   height: 33px;
   background-size: 71px 33px;
 }
-/*-DROP-DOWN-MENU-*/
 .nav_header {
   position: absolute;
   left: 0;
@@ -76,6 +76,12 @@ header {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
 }
+
+/* footer */
+footer {
+  background: 100% no-repeat url(../images/footer_background.jpg);
+  padding: 2rem;
+}
 .openinghours {
   padding: 0px;
   margin-block-start: 0em;
@@ -89,19 +95,11 @@ header {
   line-height: 120%;
   color: #ffffff;
 }
-footer {
-  background: 100% no-repeat url(../images/footer_background.jpg);
-  padding: 2rem;
+.nav_footer {
+  margin: 2rem 0;
 }
-.label_footer {
-  font-family: "Koulen";
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.085em;
-  color: #ffffff;
-}
-.nav_footer a {
+.nav_footer a,
+label[for="openinghours"] {
   display: block;
   font-family: "Koulen";
   font-weight: 400;
@@ -109,11 +107,165 @@ footer {
   line-height: 35px;
   letter-spacing: 0.085em;
   text-transform: uppercase;
+}
+.nav_footer a {
   color: #10092c;
 }
-.nav_footer {
-  margin: 2rem 0;
+label[for="openinghours"] {
+  color: #ffffff;
 }
 .logo_footer {
   width: 35%;
+}
+
+/* GLOBAL */
+h1 {
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: "Koulen";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+p {
+  font-family: "Inria Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.085em;
+}
+.quote {
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.085em;
+  color: #4a4f96;
+  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+}
+.bold {
+  font-weight: 800;
+}
+.italic {
+  font-style: italic;
+}
+.section_explore h1 {
+  color: #301d79;
+}
+.section_explore .quote {
+  color: #301d79;
+  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+}
+.card_this-month {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  background: #10092c;
+}
+.section_this-month img {
+  width: 207px;
+  height: 207px;
+  border: 5px solid #f3edf9;
+  border-radius: 50%;
+}
+.wrapper_this-month-h1 {
+  background: #f3edf9;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
+  padding: 1rem;
+  margin: 0;
+}
+.btn-background_1 {
+  background: #10092c;
+  padding: 2rem;
+}
+.btn-background_2 {
+  background: 100% no-repeat url(../images/unsplash_j-eOUoVUmQQ.jpg);
+}
+.btn_big {
+  background: no-repeat url(../logo-btn/BTN_big.png);
+  width: 260px;
+  height: 45px;
+  background-size: 260px 45px;
+  margin: 0 auto;
+}
+.btn_text {
+  font-family: "Lexend Zetta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  display: flex;
+  position: relative;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #10092c;
+}
+.section_this-month a {
+  font-family: "Lexend Zetta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.hide-in-mobile {
+  display: none;
+}
+.card_explore a {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.section_explore {
+  padding: 2rem 1rem;
+  background: #f3edf9;
+}
+.card_explore {
+  background: #fff;
+  padding: 1.5rem 0 0.5rem 0;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
+  border-radius: 50px 50px 0px 50px;
+  margin: 3rem 0;
+}
+.card_explore .quote {
+  background: radial-gradient(#e1f2d4 52.14%, rgba(216, 212, 242, 0) 99.08%), #f3edf9;
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+}
+.card_explore p {
+  padding: 0 1.5rem;
+  margin: 0 0 1.5rem 0;
+}
+.card_explore h1 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.card-from-right {
+  border-radius: 50px 50px 0px 50px;
+}
+.card-from-left {
+  border-radius: 50px 50px 50px 0px;
+}
+hr {
+  border: 5px solid #f3edf9;
+  margin: 0;
 }
