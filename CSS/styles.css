@@ -77,9 +77,9 @@ header {
 }
 .logo {
   background: no-repeat url(../logo-btn/logo_mobile_white.png);
-  width: 71px;
+  /* width: 71px;
   height: 33px;
-  background-size: 71px 33px;
+  background-size: 71px 33px; */
 }
 .menu_wrapper {
   padding-right: 16.7px;
@@ -242,7 +242,7 @@ label[for="openinghours"] {
   border-radius: 50px 50px 0px 50px;
   margin: 1.5rem 0;
   max-width: 400px;
-  height: 450px;
+  height: 500px;
 }
 .card_explore h1 {
   padding: 0;
@@ -332,6 +332,9 @@ label[for="openinghours"] {
   }
 }
 @media (min-width: 1000px) {
+  .section_this-month {
+    background-size: cover;
+  }
   .this-month_flex {
     display: flex;
     gap: 1.5rem;
@@ -354,8 +357,84 @@ label[for="openinghours"] {
     gap: 1.5rem;
   }
   .card_explore {
-    max-width: 400px;
-    min-width: 300px;
-    height: 520px;
+    width: 380px;
+    /* max-width: 400px;
+    min-width: 300px; */
+    height: 515px;
+  }
+  footer {
+    display: grid;
+    grid-template-areas: "nav_footer logo-some_footer openinghours";
+    padding: 5rem 7rem;
+  }
+  .openinghours_wrapper {
+    grid-area: openinghours;
+    margin-top: 2rem;
+    text-align: right;
+  }
+  .nav_footer {
+    grid-area: nav_footer;
+    text-align: left;
+  }
+  .logo-some_footer {
+    grid-area: logo-some_footer;
+  }
+  .logo-some_footer a {
+    margin: 5rem 2rem 0 2rem;
+  }
+  .logo_footer {
+    width: 40%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 10, 255, 0.25));
+  }
+  .wrapper_this-month-h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .menu_icon,
+  .btn_home {
+    display: none;
+  }
+  .nav_header {
+    display: flex;
+    top: 70px;
+    /* top: 64px;
+    padding-top: 0px;
+    position: static-sticky; */
+    justify-content: center;
+    padding: 0.2rem 0;
+    background-color: #6a4960;
+  }
+  .nav_header a {
+    color: #fff;
+    background-color: #6a4960;
+  }
+  .menu_dropdown {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .logo {
+    background: no-repeat url(../logo-btn/logo_regular.png);
+    width: 300px;
+    height: 20px;
+    background-size: 100%;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  header {
+    justify-content: center;
+    padding: 25px;
+  }
+  main {
+    margin-top: 30px;
+  }
+  .slogan_hero {
+    padding: 7rem 0 25rem 0;
+  }
+  .hide-in-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1250px) {
+  .card_explore {
+    height: 480px;
   }
 }
