@@ -34,21 +34,6 @@ main {
   max-height: 600px;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
 }
-.background_up-coming-card_1 {
-  background: 100% no-repeat url(/images/unsplash_astronaut-new.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.background_up-coming-card_2 {
-  background: 100% no-repeat url(/images/given_roberto-nickson-396152.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.background_up-coming-card_3 {
-  background: 100% no-repeat url(/images/unsplash_energetica-new.jpg);
-  background-size: cover;
-  background-position: center;
-}
 .card_up-coming-info {
   gap: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -69,4 +54,41 @@ main {
   max-height: 80px;
   justify-content: center;
   width: 100%;
+}
+.background_up-coming-card_1 {
+  background: 100% no-repeat url(/images/unsplash_astronaut-new.jpg);
+}
+.background_up-coming-card_2 {
+  background: 100% no-repeat url(/images/given_roberto-nickson-396152.jpg);
+}
+.background_up-coming-card_3 {
+  background: 100% no-repeat url(/images/unsplash_energetica-new.jpg);
+}
+.background_exhibitions-card_1 {
+  background: 100% no-repeat url(/images/pixabay_planet-581239.jpg);
+}
+.background_exhibitions-card_2 {
+  background: 100% no-repeat url(/images/unsplash_dinosaur.jpg);
+}
+.background_exhibitions-card_3 {
+  background: 100% no-repeat url(/images/pixabay_human-skeleton-163715.jpg);
+}
+.background_exhibitions-card_4 {
+  background: 100% no-repeat url(/images/pixabay_artificial-intelligence-4389372_1280.jpg);
+}
+.background_exhibitions-card_5 {
+  background: 100% no-repeat url(/images/unsplash_technology.jpg);
+}
+.background_exhibitions-card_6 {
+  background: 100% no-repeat url(/images/pixabay_virus-1812092_1280.jpg);
+}
+.background-styling_general {
+  background-size: cover;
+  background-position: center;
+}
+.gradient {
+  background: linear-gradient(358.52deg, #e1f2d4 61.4%, rgba(255, 255, 255, 0) 98.49%);
+}
+.card_exhibitions {
+  justify-content: end;
 }

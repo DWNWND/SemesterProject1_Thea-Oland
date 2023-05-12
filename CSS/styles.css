@@ -50,13 +50,15 @@ ul {
 .nav_header {
   display: none;
 }
-.section_explore,
-.quote-up-coming_wrapper,
-.section_up-coming,
-.card_up-coming-info,
 .menu_dropdown,
 .section_this-month,
-.card_this-month {
+.card_this-month,
+.section_explore,
+.section_up-coming,
+.card_up-coming-info,
+.quote-up-coming_wrapper,
+.section_exhibitions,
+.card_exhibitions {
   display: flex;
   flex-direction: column;
   align-items: center;
