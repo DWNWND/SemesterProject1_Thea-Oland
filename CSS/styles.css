@@ -27,6 +27,10 @@ p {
 a {
   text-decoration: none;
 }
+ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
 .quote {
   font-family: "Iceland";
   font-size: 1.2rem;
@@ -68,6 +72,7 @@ header {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
 }
+/* check if underline spesifications actually are needed */
 .logo {
   background: no-repeat url(../logo-btn/logo_mobile_white.png);
   width: 71px;
@@ -94,13 +99,15 @@ header {
 }
 .nav_header a {
   padding: 10px 20px;
+  color: #10092c;
+  background-color: #d3becd;
+}
+.nav_links-general a {
   font-family: "Lexend Zetta";
   font-size: 0.8rem;
   text-align: center;
   letter-spacing: 0.085em;
   text-transform: uppercase;
-  color: #10092c;
-  background-color: #d3becd;
 }
 .menu_dropdown {
   max-width: 100%;
@@ -119,9 +126,7 @@ footer {
   background-size: cover;
 }
 .openinghours {
-  padding-inline-start: 0;
   width: 100%;
-  list-style-type: none;
   font-family: "Iceland";
   font-size: 1rem;
   letter-spacing: 0.085em;

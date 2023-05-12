@@ -1,0 +1,78 @@
+main {
+  background: 100% no-repeat url(/images/background_gradient.jpg);
+  background-size: cover;
+}
+.nav_events-and-exhibitions-page a {
+  text-decoration: underline;
+  padding: 0.8rem;
+  display: block;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
+}
+.nav_events-and-exhibitions-page {
+  text-align: center;
+  padding: 2rem;
+}
+.nav_up-coming-section a {
+  color: #fff;
+}
+.nav_permanent-exhibitions-section a {
+  color: #10092c;
+}
+.wrapper_event-and-exhibitions-h1 {
+  color: #fff;
+  background-color: #10092c;
+  padding: 5rem 0 1rem 0;
+  margin: 0;
+}
+.section_up-coming {
+  padding: 2rem;
+  gap: 3rem;
+}
+.section_up-coming,
+.card_up-coming-info {
+  display: flex;
+  flex-direction: column;
+}
+.card_up-coming {
+  min-height: 600px;
+  max-height: 600px;
+}
+.background_up-coming-card_1 {
+  background: 100% no-repeat url(/images/unsplash_astronaut-new.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.background_up-coming-card_2 {
+  background: 100% no-repeat url(/images/given_roberto-nickson-396152.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.background_up-coming-card_3 {
+  background: 100% no-repeat url(/images/unsplash_energetica-new.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_up-coming-info {
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.card_up-coming h2,
+.card_up-coming p {
+  color: #fff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0;
+}
+.card_up-coming h2 {
+  padding-top: 1.5rem;
+}
+.quote-up-coming_wrapper {
+  background: #000;
+  min-height: 80px;
+  max-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
