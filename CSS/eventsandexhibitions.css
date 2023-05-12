@@ -86,9 +86,27 @@ main {
   background-size: cover;
   background-position: center;
 }
-.gradient {
+.gradient-from-left {
   background: linear-gradient(358.52deg, #e1f2d4 61.4%, rgba(255, 255, 255, 0) 98.49%);
+  border-radius: 0px 0px 50px 0px;
+  padding-top: 10rem;
+}
+.gradient-from-right {
+  background: linear-gradient(358.52deg, #f3edf9 61.4%, rgba(255, 255, 255, 0) 98.49%);
+  border-radius: 0px 0px 0px 50px;
+  padding-top: 10rem;
 }
 .card_exhibitions {
-  justify-content: end;
+  justify-content: space-between;
+}
+.card_exhibitions h2 {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  justify-self: normal;
+  align-self: start;
 }
