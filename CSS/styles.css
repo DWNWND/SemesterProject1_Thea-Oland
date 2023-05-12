@@ -274,10 +274,17 @@ label[for="openinghours"] {
   border-radius: 50px 50px 50px 0px;
 }
 /* BTN */
-.btn_big {
+.btn {
   padding: 1em 2em;
   border: 2px solid #10092c;
   background: #fff;
+}
+.btn_no-background {
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .btn_text {
   font-family: "Lexend Zetta";
