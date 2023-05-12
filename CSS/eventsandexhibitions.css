@@ -29,14 +29,10 @@ main {
   padding: 2rem;
   gap: 3rem;
 }
-.section_up-coming,
-.card_up-coming-info {
-  display: flex;
-  flex-direction: column;
-}
 .card_up-coming {
   min-height: 600px;
   max-height: 600px;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
 }
 .background_up-coming-card_1 {
   background: 100% no-repeat url(/images/unsplash_astronaut-new.jpg);
@@ -71,8 +67,6 @@ main {
   background: #000;
   min-height: 80px;
   max-height: 80px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
