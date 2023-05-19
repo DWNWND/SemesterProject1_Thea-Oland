@@ -7,16 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contactus.css" />
+    <link rel="stylesheet" href="css/visitus.css" />
+    <link rel="stylesheet" href="css/eventsandexhibitions.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/279950e6bf.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="menu_wrapper">
+        <input type="checkbox" id="menu_checkbox" />
+        <label for="menu_checkbox" class="menu_icon" alt="Hamburgermenu"><i class="fa-solid fa-bars"></i></label>
+        <nav class="nav_links-general nav_header">
+          <div class="menu_dropdown">
+            <a href="index.html" class="hide-in-desktop">Home</a>
+            <a href="eventsandexhibitions.html">Events and exhibitions</a>
+            <a href="visitus.html">Visit us</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="getinvolved.html">Get involved</a>
+          </div>
+        </nav>
+      </div>
+      <a href="index.html"><div class="logo"></div></a>
+      <a href="home.html" class="btn_home">Home</a>
+    </header>
+    <main class="contact-us">
+      <h1>Contact us</h1>
+      <h2>Send us a message</h2>
+      <fieldset>
+        <label for="name" class="hide">Name</label>
+        <input type="text" name="Name" id="name" placeholder="Name" class="form_input" required />
+        <label for="email" class="hide">Name</label>
+        <input type="email" name="email" id="email" placeholder="Email" class="form_input" required />
+        <textarea id="message" name="message" class="messagebox quote" placeholder="Your message here..." required></textarea>
+      </fieldset>
+      <input type="submit" value="Send" class="btn btn_send-form" />
+      <div class="card_info-small card-from-left">
+        <h2>Get in touch</h2>
+        <p>costumerservice@csm.com <span>202-555-0139</span></p>
+      </div>
+    </main>
+    <footer>
+      <div class="openinghours_wrapper">
+        <label for="openinghours">Opening hours</label>
+        <ul class="openinghours">
+          <li>Monday: Closed</li>
+          <li>Tuesday - Thursday: 10:00 – 16:00</li>
+          <li>Friday: 10:00 – 19:00</li>
+          <li>Saturday: 9:00 – 16:00</li>
+          <li>Sunday: 9:00 – 13:00</li>
+        </ul>
+      </div>
+      <nav class="nav_footer">
+        <a href="eventsandexhibitions.html">Events and exhibitions</a>
+        <a href="visitus.html">Visit us</a>
+        <a href="aboutus.html">About us</a>
+        <a href="getinvolved.html">Get involved</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <div class="logo-some_footer">
+        <img src="logo-btn/logo_big_footer.png" class="logo_footer" alt="logo" /><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"> <i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
