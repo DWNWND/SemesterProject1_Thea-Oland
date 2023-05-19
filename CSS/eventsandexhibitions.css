@@ -19,7 +19,8 @@ main {
 .nav_permanent-exhibitions-section a {
   color: #10092c;
 }
-.wrapper_event-and-exhibitions-h1 {
+.h1_up-coming,
+.h1_exhibitions {
   color: #fff;
   background-color: #10092c;
   padding: 5rem 0 1rem 0;
@@ -109,4 +110,15 @@ main {
   padding: 0.5rem 0;
   justify-self: normal;
   align-self: start;
+}
+@media (min-width: 1000px) {
+  /* main {
+    padding: 2rem 10rem;
+  } */
+  .section_up-coming {
+    padding: 1rem 10rem;
+  }
+  .section_exhibitions {
+    padding: 0 5rem;
+  }
 }

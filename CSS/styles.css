@@ -6,7 +6,7 @@ h1 {
   font-family: "Koulen";
   font-size: 1.5rem;
   text-align: center;
-  letter-spacing: 0.085rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
 h2 {
@@ -55,13 +55,16 @@ ul {
 .card_this-month,
 .section_explore,
 .section_up-coming,
-.card_up-coming-info,
-.quote-up-coming_wrapper,
 .section_exhibitions,
 .card_exhibitions {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card_up-coming-info,
+.quote-up-coming_wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER */
@@ -242,8 +245,9 @@ label[for="openinghours"] {
   padding-top: 2.5rem;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   margin: 1.5rem 0;
-  max-width: 400px;
-  height: 500px;
+  max-width: 380px;
+  min-height: 560px;
+  max-height: 560px;
 }
 .card_explore h1 {
   padding: 0;
@@ -450,7 +454,6 @@ label[for="openinghours"] {
     margin-top: 1rem;
     align-self: end;
   }
-
   .section_explore {
     display: flex;
     flex-direction: row;
@@ -459,14 +462,78 @@ label[for="openinghours"] {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  .card_explore,
-  .card_general {
-    width: 380px;
-    height: 515px;
-    padding: 2rem 0;
-  }
   .btn_text {
     font-size: 0.8rem;
+  }
+  .section_exhibitions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .card_exhibitions {
+    margin: 0;
+  }
+  .h1_up-coming,
+  .h1_exhibitions {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: none;
+  }
+  .h1_up-coming {
+    color: #fff;
+  }
+  .h1_exhibitions {
+    color: #3a005e;
+  }
+  .nav_events-and-exhibitions-page {
+    padding: 0;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
+  }
+  .nav_events-and-exhibitions-page a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem;
+  }
+  .nav_permanent-exhibitions-section li {
+    display: inline;
+  }
+  .nav_permanent-exhibitions-section ul {
+    margin: 1rem 0 3rem;
+  }
+  .nav_links-general a {
+    font-size: 0.7rem;
+  }
+  .card_up-coming {
+    min-height: 400px;
+    max-height: 400px;
+  }
+  .card_up-coming-info {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 98.49%);
+  }
+  .align-left_in-desktop {
+    text-align: left;
+  }
+  .align-right_in-desktop {
+    text-align: right;
+  }
+  .background_up-coming-card_1 h2,
+  .background_up-coming-card_1 p,
+  .background_up-coming-card_3 h2,
+  .background_up-coming-card_3 p {
+    padding-right: 17rem;
+    padding-left: 2rem;
+  }
+  .background_up-coming-card_2 h2,
+  .background_up-coming-card_2 p {
+    padding-right: 2rem;
+    padding-left: 17rem;
+  }
+  .next-line_in-desktop {
+    display: block;
+  }
+  .quote-up-coming_wrapper {
+    background: none;
   }
 }
 @media (min-width: 1250px) {
