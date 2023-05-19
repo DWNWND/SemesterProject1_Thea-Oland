@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/visitus.css" />
+    <link rel="stylesheet" href="css/eventsandexhibitions.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -22,7 +23,7 @@
         <label for="menu_checkbox" class="menu_icon" alt="Hamburgermenu"><i class="fa-solid fa-bars"></i></label>
         <nav class="nav_links-general nav_header">
           <div class="menu_dropdown">
-            <a href="home.html" class="hide-in-desktop">Home</a>
+            <a href="index.html" class="hide-in-desktop">Home</a>
             <a href="eventsandexhibitions.html">Events and exhibitions</a>
             <a href="visitus.html">Visit us</a>
             <a href="contactus.html">Contact us</a>
@@ -30,52 +31,51 @@
           </div>
         </nav>
       </div>
-      <div class="logo"></div>
+      <a href="index.html"><div class="logo"></div></a>
       <a href="home.html" class="btn_home">Home</a>
     </header>
     <main>
-      <h1>Visit us</h1>
-      <h2>Opening hours</h2>
-      <div class="openinghours">
-        <p>Monday:</p>
-        <p>Closed</p>
-        <p>Tuesday - Thursday:</p>
-        <p>10:00 – 16:00</p>
-        <p>Friday:</p>
-        <p>10:00 – 19:00</p>
-        <p>Saturday:</p>
-        <p>9:00 – 16:00</p>
-        <p>Sunday:</p>
-        <p>9:00 – 13:00</p>
-      </div>
-      <h2>Location</h2>
-      <div class="location">
-        <p>4379 Marigold Lane</p>
-        <p>Coral Gables</p>
-        <p>33134 Florida</p>
-        <div class="circular-img_wrapper"><!-- MAP --></div>
-      </div>
-      <div class="card_visit-us card-from-right">
-        <h2>Accessibility</h2>
-        <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
-      </div>
-      <div class="card_visit-us card-from-left">
-        <h2>Shop</h2>
-        <p>Get memorabilia, great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
-      </div>
-      <div class="card_visit-us card-from-right">
-        <h2>Food and drink</h2>
-        <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-      </div>
-      <div class="card_visit-us card-from-left">
-        <h2>Admission</h2>
-        <p>The entrance is free for all.</p>
-      </div>
-      <!-- IMG -->
-      <!-- <div class="slogan_hero">Lets explore together</div> -->
+      <section class="visit-us-top-section">
+        <h1 class="grid-area-h1">Visit us</h1>
+        <div class="grid-area-left">
+          <h2>Opening hours</h2>
+          <div class="openinghours">
+            <p>Monday:<span class="next-line">Closed</span></p>
+            <p>Tuesday - Thursday: <span>10:00 – 16:00</span></p>
+            <p>Friday: <span>10:00 – 19:00</span></p>
+            <p>Saturday: <span>9:00 – 16:00</span></p>
+            <p>Sunday: <span>9:00 – 13:00</span></p>
+          </div>
+          <h2>Location</h2>
+          <div class="location">
+            <p>4379 Marigold Lane, <span>Coral Gables, </span><span class="next-line">33134 Florida</span></p>
+          </div>
+        </div>
+        <div class="circular-map"><iframe width="300" height="300" frameborder="0" style="border: 0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrta3raAZ9E_72R8NUzEgdsWUnKrkbHNs&q=Teknisk+Museum" allowfullscreen> </iframe></div>
+      </section>
+
+      <section class="info-section">
+        <div class="card_visit-us card-from-right">
+          <h2>Accessibility</h2>
+          <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+        </div>
+        <div class="card_visit-us card-from-left">
+          <h2>Shop</h2>
+          <p>Get memorabilia, great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+        </div>
+        <div class="card_visit-us card-from-right">
+          <h2>Food and drink</h2>
+          <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+        </div>
+        <div class="card_visit-us card-from-left">
+          <h2>Admission</h2>
+          <p>The entrance is free for all.</p>
+        </div>
+      </section>
+      <div class="slogan_cube">Lets explore together</div>
       <div class="btn-background_3">
-        <a href="contactus.html" class="btn_small btn_text"><label for="btn">Contact us</label></a>
-        <a href="getinvolved.html" class="btn_small btn_text"><label for="btn">Get involved</label></a>
+        <a href="contactus.html" class="btn btn_text btn_visit-us"><label for="btn">Contact us</label></a>
+        <a href="getinvolved.html" class="btn btn_text btn_visit-us"><label for="btn">Get involved</label></a>
       </div>
     </main>
     <footer>

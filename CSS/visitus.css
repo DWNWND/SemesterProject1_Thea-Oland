@@ -1,0 +1,135 @@
+.visit-us-top-section,
+.info-section {
+  padding: 2rem;
+}
+.visit-us-top-section h1 {
+  color: #fff;
+  margin: 0;
+}
+.visit-us-top-section h2,
+.info-section h2 {
+  color: #301d79;
+}
+.visit-us-top-section h2 {
+  margin-top: 2rem;
+}
+.visit-us-top-section p {
+  margin: 0;
+  text-align: center;
+}
+.openinghours span,
+.location span {
+  display: block;
+}
+.openinghours span {
+  padding-bottom: 1rem;
+}
+.circular-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  margin-top: 2rem;
+  filter: drop-shadow(10px 10px 10px rgba(0, 10, 255, 0.25));
+}
+.card_visit-us {
+  background: #f3edf9;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
+  padding: 1.2rem;
+  max-width: 300px;
+  max-height: 170px;
+  min-width: 300px;
+  min-height: 170px;
+  /* justify-content: center; */
+}
+
+.card_visit-us h2 {
+  margin-top: 1rem;
+}
+.card_visit-us p {
+  justify-self: center;
+}
+.info-section {
+  gap: 1.5rem;
+  padding: 3rem 0 0;
+}
+.btn-background_3 {
+  background: 100% no-repeat url(../images/unsplash_G66K_ERZRh.jpg);
+  padding: 3rem 2rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.btn_visit-us {
+  display: block;
+  max-width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn_visit-us:last-of-type {
+  margin-top: 1.5rem;
+}
+.slogan_cube {
+  background: 100% no-repeat url(../logo-btn/unsplash_tmp-6448fda3a9ca0.png);
+  background-size: contain;
+  background-position: center;
+  padding: 25rem 0 5rem 0;
+}
+@media (min-width: 1000px) {
+  .location span {
+    display: inline-block;
+  }
+  .visit-us-top-section h2,
+  .visit-us-top-section p {
+    text-align: left;
+    margin-left: 0;
+  }
+  .visit-us-top-section {
+    max-width: 600px;
+  }
+  .visit-us-top-section,
+  .info-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .visit-us-top-section {
+    display: grid;
+    padding-top: 4rem;
+    grid-template-areas:
+      "h1 h1"
+      "leftside map";
+    gap: 2rem;
+  }
+  .grid-area-h1 {
+    grid-area: h1;
+  }
+  .grid-area-left {
+    grid-area: leftside;
+  }
+  .circular-map {
+    grid-area: map;
+    align-self: center;
+  }
+  .info-section {
+    display: grid;
+    grid-template-areas:
+      "1fr 1fr"
+      "1fr 1fr";
+    justify-content: center;
+    gap: 2rem;
+  }
+  .btn_visit-us {
+    display: inline-block;
+    max-width: 10rem;
+    min-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn_visit-us:last-of-type {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+}

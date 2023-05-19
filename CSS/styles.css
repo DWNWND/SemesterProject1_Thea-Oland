@@ -56,7 +56,9 @@ ul {
 .section_explore,
 .section_up-coming,
 .section_exhibitions,
-.card_exhibitions {
+.card_exhibitions,
+.info-section,
+.card_visit-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +141,9 @@ footer {
   background-position: top;
   background-size: cover;
 }
-.openinghours {
+.openinghours,
+.openinghours p,
+.location p {
   width: 100%;
   font-family: "Iceland";
   font-size: 1rem;
@@ -184,14 +188,17 @@ label[for="openinghours"] {
   color: #301d79;
 }
 /* SECTIONS */
-.slogan_hero {
+.slogan_hero,
+.slogan_cube {
   font-family: "Lexend Zetta";
   font-size: 0.7rem;
   text-align: center;
   letter-spacing: 0.085rem;
   text-transform: uppercase;
-  padding: 3.5rem 0 20rem 0;
   color: #ffffff;
+}
+.slogan_hero {
+  padding: 3.5rem 0 20rem 0;
 }
 .section_this-month {
   background: 100% no-repeat url(../images/hero_background.jpg);
@@ -204,12 +211,15 @@ label[for="openinghours"] {
 .width100 {
   width: 100%;
 }
-.circular-img_wrapper {
-  width: 207px;
-  height: 207px;
+.circular-img_wrapper,
+.circular-map {
   overflow: hidden;
   border: 5px solid #f3edf9;
   border-radius: 50%;
+}
+.circular-img_wrapper {
+  width: 207px;
+  height: 207px;
 }
 .card_this-month {
   color: #fff;
@@ -529,7 +539,7 @@ label[for="openinghours"] {
     padding-right: 2rem;
     padding-left: 17rem;
   }
-  .next-line_in-desktop {
+  .next-line_desktop {
     display: block;
   }
   .quote-up-coming_wrapper {

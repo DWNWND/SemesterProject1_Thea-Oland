@@ -112,9 +112,6 @@ main {
   align-self: start;
 }
 @media (min-width: 1000px) {
-  /* main {
-    padding: 2rem 10rem;
-  } */
   .section_up-coming {
     padding: 1rem 10rem;
   }
