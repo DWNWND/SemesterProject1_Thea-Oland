@@ -1,72 +1,48 @@
+.hide {
+  display: none;
+}
 body {
   margin: 0;
   overscroll-behavior: none;
 }
-h1 {
-  font-family: "Koulen";
-  font-size: 1.5rem;
+.main__events-and-exhibitions,
+.main__visit-us {
+  background: 100% no-repeat url(/images/background_gradient.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.main__get-involved {
+  background: 100% no-repeat url(/images/background_get-involved.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.main__contact-us {
+  padding: 2rem;
   text-align: center;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-}
-h2 {
-  font-family: "Koulen";
-  font-size: 1.3rem;
-  text-align: center;
-  letter-spacing: 0.085rem;
-  text-transform: uppercase;
-  /* margin: 0.5rem; */
-  margin: 0;
-}
-p {
-  font-family: "Inria Sans";
-  font-weight: 300;
-  font-size: 0.85rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.085em;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  padding-inline-start: 0;
-  list-style-type: none;
-}
-.quote,
-.form_input::placeholder {
-  font-family: "Iceland";
-  font-size: 1.2rem;
-  /* text-align: center; ikke i form */
-  letter-spacing: 0.085em;
-  color: #4a4f96;
-  /* text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25); ikke i form */
-}
-.bold {
-  font-weight: 800;
-}
-.italic {
-  font-style: italic;
+  background: 100% no-repeat url(../images/hero_background.jpg);
+  background-position: top;
+  background-size: cover;
 }
 .hide-in-mobile,
 #menu_checkbox,
-.nav_header {
+.nav__header {
   display: none;
 }
 .menu_dropdown,
-.section_this-month,
+.section__this-month,
 .card_this-month,
-.section_explore,
-.section_up-coming,
-.section_exhibitions,
-.card_exhibitions,
-.info-section,
-.card_info-small {
+.section__explore,
+.section__up-coming,
+.section__exhibitions,
+.card__exhibitions,
+.section__info,
+.card__info-small {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card_up-coming-info,
-.quote-up-coming_wrapper {
+.card__up-coming_info,
+.wrapper__up-coming_quote {
   display: flex;
   flex-direction: column;
 }
@@ -109,7 +85,7 @@ header {
 #menu_checkbox:checked ~ nav {
   display: block;
 }
-.nav_header {
+.nav__header {
   position: absolute;
   left: 0;
   background: #d3becd;
@@ -117,23 +93,13 @@ header {
   width: 100%;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.1);
 }
-.nav_header a {
-  padding: 10px 20px;
-  color: #10092c;
-  background-color: #d3becd;
-}
-.nav_links-general a {
-  font-family: "Lexend Zetta";
-  font-size: 0.8rem;
-  text-align: center;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-}
 .menu_dropdown {
   max-width: 100%;
   align-items: stretch;
-  justify-content: normal;
+  /* justify-content: space-around; */
+  gap: 1rem;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 
 /* FOOTER */
@@ -153,10 +119,10 @@ footer {
   line-height: 120%;
   color: #ffffff;
 }
-.nav_footer {
+.nav__footer {
   margin: 2rem 0;
 }
-.nav_footer a,
+.nav__footer a,
 label[for="openinghours"] {
   display: block;
   font-family: "Koulen";
@@ -165,7 +131,7 @@ label[for="openinghours"] {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.nav_footer a {
+.nav__footer a {
   color: #10092c;
 }
 label[for="openinghours"] {
@@ -190,19 +156,26 @@ label[for="openinghours"] {
   color: #301d79;
 }
 /* SECTIONS */
-.slogan_hero,
-.slogan_cube {
+.slogan__hero,
+.slogan__cube {
   font-family: "Lexend Zetta";
   font-size: 0.7rem;
   text-align: center;
   letter-spacing: 0.085rem;
   text-transform: uppercase;
-  color: #ffffff;
 }
-.slogan_hero {
-  padding: 3.5rem 0 20rem 0;
+.slogan__cube {
+  color: #301d79;
+  background: 100% no-repeat url(../logo-btn/unsplash_tmp-6448fda3a9ca0.png);
+  background-size: contain;
+  background-position: center;
+  padding: 25rem 0 5rem 0;
 }
-.section_this-month {
+.slogan__hero {
+  padding: 1.5rem 0 18rem 0;
+  color: #fff;
+}
+.section__this-month {
   background: 100% no-repeat url(../images/hero_background.jpg);
   background-position: top;
   background-size: 200%;
@@ -214,12 +187,14 @@ label[for="openinghours"] {
   width: 100%;
 }
 .circular-img_wrapper,
-.circular-map, .circular-img_get-involved {
+.circular-map,
+.circular-img__get-involved {
   overflow: hidden;
   border: 5px solid #f3edf9;
   border-radius: 50%;
 }
-.circular-img_wrapper, .circular-img_get-involved {
+.circular-img_wrapper,
+.circular-img__get-involved {
   width: 207px;
   height: 207px;
 }
@@ -230,43 +205,23 @@ label[for="openinghours"] {
   background: #10092c;
   min-width: 400px;
 }
-.wrapper_this-month-h1 {
-  background: #f3edf9;
-  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
-  padding: 1rem;
-  margin: 0;
-  min-width: 400px;
-  color: #301d79;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.section_this-month a {
-  font-family: "Lexend Zetta";
-  font-size: 0.7rem;
-  text-align: center;
-  text-decoration-line: underline;
-  color: #ffffff;
-}
-.section_explore {
-  padding: 2rem;
+
+.section__explore {
+  gap: 2rem;
   background: #f3edf9;
 }
-.card_explore {
+.card__explore {
   background: #fff;
 }
 .card_general {
   padding-top: 2.5rem;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
   max-width: 380px;
   min-height: 560px;
   max-height: 560px;
 }
-.card_explore h1 {
-  padding: 0;
-  margin: 0 0 1rem 0;
-  color: #301d79;
-}
-.card_explore .quote {
+.card__explore .quote {
   background: radial-gradient(#e1f2d4 52.14%, rgba(216, 212, 242, 0) 99.08%), #f3edf9;
   padding: 1.5rem 1rem;
   text-transform: uppercase;
@@ -277,7 +232,7 @@ label[for="openinghours"] {
   padding: 0 1.5rem;
   margin: 0 0 2rem 0;
 }
-.card_explore a {
+.card__explore a {
   color: #000;
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -303,7 +258,7 @@ label[for="openinghours"] {
   margin-bottom: 5rem;
   white-space: nowrap;
 }
-.btn_text,
+.btn__text,
 input[value^="Send"] {
   font-family: "Lexend Zetta";
   font-weight: 500;
@@ -324,235 +279,14 @@ input[value^="Send"] {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 400px) {
-  .section_this-month {
-    background-color: #f3edf9;
-  }
-  .btn-background_1 {
-    background: 100% no-repeat url(../images/pixabay_dna-3539309_1280_1.jpg);
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-color: #d3becd;
-  }
-}
-@media (min-width: 450px) {
-  .section_this-month {
-    padding-bottom: 3rem;
-  }
-}
-@media (min-width: 500px) {
-  footer {
-    text-align: center;
-  }
-}
-@media (min-width: 600px) {
-  .logo_footer {
-    width: 25%;
-  }
-}
-@media (min-width: 800px) {
-  .section_this-month {
-    background-size: contain;
-  }
-}
-@media (min-width: 1000px) {
-  .hide-in-desktop {
-    display: none;
-  }
-  .hide-in-mobile {
-    display: block;
-  }
-
-  /* header */
-  header {
-    justify-content: center;
-    padding: 25px;
-  }
-  .menu_icon,
-  .btn_home {
-    display: none;
-  }
-  .nav_header {
-    display: flex;
-    top: 70px;
-    justify-content: center;
-    padding: 0.2rem 0;
-    background-color: #6a4960;
-  }
-  .menu_dropdown {
-    flex-direction: row;
-  }
-  .nav_header a {
-    color: #fff;
-    background-color: #6a4960;
-    font-size: 0.65rem;
-  }
-  .logo {
-    background: no-repeat url(../logo-btn/logo_regular.png);
-    width: 300px;
-    height: 20px;
-    background-size: 100%;
-  }
-
-  /* footer */
-  footer {
-    display: grid;
-    grid-template-areas: "nav_footer logo-some_footer openinghours";
-    padding: 5rem 7rem;
-  }
-  .openinghours_wrapper {
-    grid-area: openinghours;
-    margin-top: 2rem;
-    text-align: right;
-  }
-  .nav_footer {
-    grid-area: nav_footer;
-    text-align: left;
-  }
-  .logo-some_footer {
-    grid-area: logo-some_footer;
-    white-space: nowrap;
-    filter: drop-shadow(10px 10px 10px rgba(0, 10, 255, 0.25));
-  }
-  .logo-some_footer a {
-    margin: 5rem 2rem 0 2rem;
-  }
-
-  /* main */
-  main {
-    margin-top: 30px;
-  }
-  .section_this-month {
-    background-size: cover;
-    padding-bottom: 5rem;
-  }
-  .slogan_hero {
-    padding: 6rem 0 25rem 0;
-    font-size: 0.8rem;
-  }
-  .wrapper_this-month-h1 {
-    background: none;
-    color: #fff;
-    box-shadow: none;
-    text-align: left;
-    padding: 0.5rem 0;
-  }
-  .this-month_flex {
-    display: flex;
-    gap: 1.5rem;
-  }
-  .card_this-month {
-    display: grid;
-    align-content: start;
-    min-width: 240px;
-    max-width: 270px;
-    padding: 3rem 2rem 4rem 2rem;
-    gap: 0.5rem;
-  }
-  .circular-img_wrapper {
-    width: 217px;
-    height: 217px;
-    /* border: none; */
-    justify-self: center;
-  }
-  .card_this-month h2 {
-    margin: 1rem 0 0 0;
-    text-align: left;
-  }
-  .card_this-month p {
-    margin: 0;
-    height: 115px;
-  }
-  .section_this-month a {
-    margin-top: 1rem;
-    align-self: end;
-  }
-  .section_explore {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .btn_text {
-    font-size: 0.8rem;
-  }
-  .section_exhibitions {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-  .card_exhibitions {
-    margin: 0;
-  }
-  .h1_up-coming,
-  .h1_exhibitions {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: none;
-  }
-  .h1_up-coming {
-    color: #fff;
-  }
-  .h1_exhibitions {
-    color: #3a005e;
-  }
-  .nav_events-and-exhibitions-page {
-    padding: 0;
-    background: #fff;
-    box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
-  }
-  .nav_events-and-exhibitions-page a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.8rem;
-  }
-  .nav_permanent-exhibitions-section li {
-    display: inline;
-  }
-  .nav_permanent-exhibitions-section ul {
-    margin: 1rem 0 3rem;
-  }
-  .nav_links-general a {
-    font-size: 0.7rem;
-  }
-  .card_up-coming {
-    min-height: 400px;
-    max-height: 400px;
-  }
-  .card_up-coming-info {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 98.49%);
-  }
-  .align-left_in-desktop {
-    text-align: left;
-  }
-  .align-right_in-desktop {
-    text-align: right;
-  }
-  .background_up-coming-card_1 h2,
-  .background_up-coming-card_1 p,
-  .background_up-coming-card_3 h2,
-  .background_up-coming-card_3 p {
-    padding-right: 17rem;
-    padding-left: 2rem;
-  }
-  .background_up-coming-card_2 h2,
-  .background_up-coming-card_2 p {
-    padding-right: 2rem;
-    padding-left: 17rem;
-  }
-  .next-line_desktop {
-    display: block;
-  }
-  .quote-up-coming_wrapper {
-    background: none;
-  }
-}
-@media (min-width: 1250px) {
-  .card_explore,
-  .card_general {
-    height: 480px;
-  }
+.main__get-involved,
+.section__this-month,
+.section__up-coming,
+.section__exhibitions,
+.section__visit-us_top,
+.section__info,
+.section__explore,
+.nav__up-coming-events,
+.nav__permanent-exhibitions {
+  padding: 2rem;
 }

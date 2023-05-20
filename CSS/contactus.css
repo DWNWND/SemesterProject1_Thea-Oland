@@ -1,5 +1,9 @@
-.hide {
-  display: none;
+fieldset {
+  border: 0;
+  padding: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form_input {
   background: rgba(243, 237, 249, 0.9);
@@ -11,48 +15,26 @@
   padding: 0 10px;
   box-sizing: border-box;
 }
-fieldset {
-  border: 0;
-  padding: 0;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+::placeholder {
+  color: #4a4f96;
+  text-shadow: none;
 }
 .messagebox {
   background: rgba(243, 237, 249, 0.9);
   border: 3px solid #ffffff;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   margin: 0.5rem 0;
   padding: 0.6rem 0.6rem;
   box-sizing: border-box;
   text-align: left;
-}
-::placeholder {
-  color: #4a4f96;
-  text-shadow: none;
 }
 .btn_send-form {
   max-width: 10rem;
   min-width: 10rem;
   margin-top: 1rem;
 }
-.contact-us {
-  padding: 2rem;
-  text-align: center;
-  background: 100% no-repeat url(../images/hero_background.jpg);
-  background-position: top;
-  background-size: cover;
-}
-.contact-us .card_info-small {
+.main__contact-us .card__info-small {
   margin: 5rem auto;
-}
-.card_info-small span {
-  display: block;
-}
-@media (min-width: 1000px) {
-  .contact-us {
-    padding-top: 4rem;
-  }
 }

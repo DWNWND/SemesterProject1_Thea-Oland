@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/text-styles.css" />
     <link rel="stylesheet" href="css/visitus.css" />
     <link rel="stylesheet" href="css/eventsandexhibitions.css" />
+    <link rel="stylesheet" href="css/mq.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Koulen&family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -21,7 +23,7 @@
       <div class="menu_wrapper">
         <input type="checkbox" id="menu_checkbox" />
         <label for="menu_checkbox" class="menu_icon" alt="Hamburgermenu"><i class="fa-solid fa-bars"></i></label>
-        <nav class="nav_links-general nav_header">
+        <nav class="nav__links-general nav__header">
           <div class="menu_dropdown">
             <a href="index.html" class="hide-in-desktop">Home</a>
             <a href="eventsandexhibitions.html">Events and exhibitions</a>
@@ -34,10 +36,10 @@
       <a href="index.html"><div class="logo"></div></a>
       <a href="home.html" class="btn_home">Home</a>
     </header>
-    <main>
-      <section class="visit-us-top-section">
-        <h1 class="grid-area-h1">Visit us</h1>
-        <div class="grid-area-left">
+    <main class="main__visit-us">
+      <section class="section__visit-us_top">
+        <h1 class="grid-area_h1">Visit us</h1>
+        <div class="grid-area_left">
           <h2>Opening hours</h2>
           <div class="openinghours">
             <p>Monday:<span class="next-line">Closed</span></p>
@@ -54,28 +56,28 @@
         <div class="circular-map"><iframe width="300" height="300" frameborder="0" style="border: 0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrta3raAZ9E_72R8NUzEgdsWUnKrkbHNs&q=Teknisk+Museum" allowfullscreen> </iframe></div>
       </section>
 
-      <section class="info-section">
-        <div class="card_visit-us card-from-right">
+      <section class="section__info">
+        <div class="card__info-small card-from-right">
           <h2>Accessibility</h2>
           <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
         </div>
-        <div class="card_visit-us card-from-left">
+        <div class="card__info-small card-from-left">
           <h2>Shop</h2>
           <p>Get memorabilia, great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
         </div>
-        <div class="card_visit-us card-from-right">
+        <div class="card__info-small card-from-right">
           <h2>Food and drink</h2>
           <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
         </div>
-        <div class="card_visit-us card-from-left">
+        <div class="card__info-small card-from-left">
           <h2>Admission</h2>
           <p>The entrance is free for all.</p>
         </div>
       </section>
-      <div class="slogan_cube">Lets explore together</div>
-      <div class="btn-background_3">
-        <a href="contactus.html" class="btn btn_text btn_visit-us"><label for="btn">Contact us</label></a>
-        <a href="getinvolved.html" class="btn btn_text btn_visit-us"><label for="btn">Get involved</label></a>
+      <div class="slogan__cube">Lets explore together</div>
+      <div class="btn__background_3">
+        <a href="contactus.html" class="btn btn__text btn__visit-us"><label for="btn">Contact us</label></a>
+        <a href="getinvolved.html" class="btn btn__text btn_visit-us"><label for="btn">Get involved</label></a>
       </div>
     </main>
     <footer>
@@ -89,7 +91,7 @@
           <li>Sunday: 9:00 – 13:00</li>
         </ul>
       </div>
-      <nav class="nav_footer">
+      <nav class="nav__footer">
         <a href="eventsandexhibitions.html">Events and exhibitions</a>
         <a href="visitus.html">Visit us</a>
         <a href="aboutus.html">About us</a>

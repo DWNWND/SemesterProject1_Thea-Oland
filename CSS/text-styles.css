@@ -1,0 +1,144 @@
+h1 {
+  font-family: "Koulen";
+  font-size: 1.7rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main__events-and-exhibitions h1 {
+  background-color: #10092c;
+  padding: 5rem 0 1rem 0;
+  color: #fff;
+}
+
+.main__visit-us h1,
+.main__contact-us h1,
+.main__get-involved h1 {
+  color: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.main__events-and-exhibitions h1,
+.main__visit-us h1,
+.main__contact-us h1,
+.main__get-involved h1,
+.section__this-month h1 {
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section__this-month h1 {
+  background: #f3edf9;
+  box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
+  padding: 1rem;
+  min-width: 400px;
+  color: #301d79;
+}
+.section__explore h1 {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  color: #301d79;
+}
+h2 {
+  font-family: "Koulen";
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.085rem;
+  text-transform: uppercase;
+  /* margin: 0.5rem; */
+  margin: 0;
+}
+.main__visit-us h2,
+.main__contact-us h2,
+.main__get-involved h2 {
+  color: #301d79;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__up-coming h2,
+.card__exhibitions h2 {
+  color: #fff;
+}
+.card__up-coming h2 {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.card__exhibitions h2 {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-self: normal;
+  align-self: start;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+p {
+  font-family: "Inria Sans";
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.085em;
+  color: #301d79;
+}
+.section__visit-us_top p {
+  margin: 0;
+  text-align: center;
+}
+.card__up-coming p {
+  color: #fff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.nav__links-general a {
+  font-family: "Lexend Zetta";
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+}
+.nav__header a {
+  color: #10092c;
+}
+.nav__up-coming-events a,
+.nav__permanent-exhibitions a {
+  text-decoration: underline;
+  padding: 0.8rem;
+  display: block;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
+}
+.nav__up-coming-events a {
+  color: #fff;
+}
+.nav__permanent-exhibitions a {
+  color: #10092c;
+}
+.section__this-month a {
+  font-family: "Lexend Zetta";
+  font-size: 0.7rem;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.quote,
+.form_input::placeholder {
+  font-family: "Iceland";
+  font-size: 1.1rem;
+  letter-spacing: 0.085em;
+  color: #4a4f96;
+}
+.quote {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
+}
+.bold {
+  font-weight: 800;
+}
+.italic {
+  font-style: italic;
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
