@@ -76,8 +76,8 @@ ul {
 .nav__permanent-exhibitions,
 .slogan__hero,
 .slogan__cube,
-.btn-background_1,
-.btn-background_2,
+.btn__background_1,
+.btn__background_2,
 .btn__background_3 {
   text-align: center;
 }
@@ -349,6 +349,7 @@ input[value^="Send"] {
   letter-spacing: 0.085em;
   text-transform: uppercase;
   color: #10092c;
+  white-space: nowrap;
 }
 .btn__background_1 {
   background: #10092c;
@@ -389,7 +390,6 @@ input[value^="Send"] {
   width: 100%;
 }
 .circular-img_wrapper,
-.circular-map,
 .circular-img__get-involved {
   overflow: hidden;
   border: 5px solid #f3edf9;

@@ -2,7 +2,7 @@
   .section__this-month {
     background-color: #f3edf9;
   }
-  .btn-background_1 {
+  .btn__background_1 {
     background: 100% no-repeat url(../images_compressed/pixabay_dna_compressed.jpg);
     text-align: center;
     background-size: cover;
@@ -34,11 +34,36 @@
   .hide-in-desktop {
     display: none;
   }
-  .hide-in-mobile {
+  .hide-in-mobile,
+  .quote span {
     display: block;
   }
-
-  /* header */
+  .location span {
+    display: inline-block;
+  }
+  .align-left_in-desktop {
+    text-align: left;
+  }
+  .align-right_in-desktop {
+    text-align: right;
+  }
+  main {
+    margin-top: 30px;
+  }
+  .this-month_flex {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main__contact-us {
+    padding-top: 4rem;
+  }
+  .nav__permanent-exhibitions li {
+    display: inline;
+  }
+  .nav__permanent-exhibitions ul {
+    margin: 1rem 0 3rem;
+  }
+  /* ------ HEADER ------ */
   header {
     justify-content: center;
     padding: 25px;
@@ -71,7 +96,7 @@
     background-size: 100%;
   }
 
-  /* footer */
+  /* ------ FOOTER ------ */
   footer {
     display: grid;
     grid-template-areas: "nav__footer logo-some_footer openinghours";
@@ -94,18 +119,10 @@
   .logo-some_footer a {
     margin: 5rem 2rem 0 2rem;
   }
-
-  /* main */
-  main {
-    margin-top: 30px;
-  }
-  .section__this-month {
-    background-size: cover;
-    padding: 0 2rem 5rem;
-  }
-  .slogan__hero {
-    padding: 6rem 0 25rem 0;
-    font-size: 0.8rem;
+  /* ------ TEXT-STYLES ------ */
+  .main__events-and-exhibitions h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: none;
   }
   .section__this-month h1 {
     background: none;
@@ -114,23 +131,11 @@
     text-align: left;
     padding: 0.5rem 0;
   }
-  .this-month_flex {
-    display: flex;
-    gap: 1.5rem;
+  .h1__up-coming-events {
+    color: #fff;
   }
-  .card__this-month {
-    display: grid;
-    align-content: start;
-    min-width: 240px;
-    max-width: 270px;
-    padding: 3rem 2rem 4rem 2rem;
-    gap: 0.5rem;
-  }
-  .circular-img_wrapper {
-    width: 217px;
-    height: 217px;
-    /* border: none; */
-    justify-self: center;
+  .h1__exhibitions {
+    color: #3a005e;
   }
   .card__this-month h2 {
     margin: 1rem 0 0 0;
@@ -144,35 +149,8 @@
     margin-top: 1rem;
     align-self: end;
   }
-  .section__explore {
-    display: grid;
-    grid-template-areas: "1fr 1fr 1fr";
-    justify-content: center;
-    gap: 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .btn_text {
-    font-size: 0.8rem;
-  }
-  .section__exhibitions {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-  .card__exhibitions {
-    margin: 0;
-  }
-  .main__events-and-exhibitions h1 {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: none;
-  }
-  .h1__up-coming-events {
-    color: #fff;
-  }
-  .h1__exhibitions {
-    color: #3a005e;
+  .nav__links-general a {
+    font-size: 0.7rem;
   }
   .nav__up-coming-events,
   .nav__permanent-exhibitions {
@@ -186,28 +164,6 @@
     display: inline-block;
     padding: 0.8rem;
   }
-  .nav__permanent-exhibitions li {
-    display: inline;
-  }
-  .nav__permanent-exhibitions ul {
-    margin: 1rem 0 3rem;
-  }
-  .nav__links-general a {
-    font-size: 0.7rem;
-  }
-  .card_up-coming {
-    min-height: 400px;
-    max-height: 400px;
-  }
-  .card__up-coming_info {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 98.49%);
-  }
-  .align-left_in-desktop {
-    text-align: left;
-  }
-  .align-right_in-desktop {
-    text-align: right;
-  }
   .background_up-coming-card_1 h2,
   .background_up-coming-card_1 p,
   .background_up-coming-card_3 h2,
@@ -220,33 +176,36 @@
     padding-right: 2rem;
     padding-left: 17rem;
   }
-  .next-line_desktop {
-    display: block;
-  }
-  .quote__up-coming {
-    background: none;
-  }
-  .section__up-coming {
-    padding: 1rem 10rem;
-  }
-  .section__exhibitions {
-    padding: 0 5rem;
-  }
-  .location span {
-    display: inline-block;
-  }
   .section__visit-us_top h2,
   .section__visit-us_top p {
     text-align: left;
     margin-left: 0;
   }
-  .section__visit-us_top {
-    max-width: 744px;
+  .quote__up-coming {
+    background: none;
   }
-  .section__visit-us_top,
-  .section__visit-us_additional-info {
-    margin-left: auto;
-    margin-right: auto;
+  /* ------ SECTIONS ------ */
+  .section__this-month {
+    background-size: cover;
+    padding: 0 2rem 5rem;
+  }
+  .section__explore {
+    display: grid;
+    grid-template-areas: "1fr 1fr 1fr";
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .section__up-coming {
+    padding: 1rem 10rem;
+  }
+  .section__exhibitions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 5rem;
   }
   .section__visit-us_top {
     display: grid;
@@ -268,6 +227,9 @@
     align-self: center;
     width: 345.2px;
   }
+  .section__visit-us_top {
+    max-width: 744px;
+  }
   .section__visit-us_additional-info {
     display: grid;
     grid-template-areas:
@@ -275,6 +237,35 @@
       "1fr 1fr";
     justify-content: center;
     gap: 2rem;
+  }
+  .section__visit-us_top,
+  .section__visit-us_additional-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ------ CARDS------ */
+  .card__this-month {
+    display: grid;
+    align-content: start;
+    min-width: 240px;
+    max-width: 270px;
+    padding: 3rem 2rem 4rem 2rem;
+    gap: 0.5rem;
+  }
+  .card_up-coming {
+    min-height: 400px;
+    max-height: 400px;
+  }
+  .card__up-coming_info {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 98.49%);
+  }
+  .card__exhibitions {
+    margin: 0;
+  }
+  /* ------ BTN ------ */
+  .btn_text {
+    font-size: 0.8rem;
   }
   .btn__visit-us {
     display: inline-block;
@@ -287,12 +278,22 @@
     margin-top: 0;
     margin-left: 1.5rem;
   }
-  .main__contact-us {
-    padding-top: 4rem;
+  /* ------ CIRCULAR-IMG AND MAP ----- */
+  .circular-img_wrapper {
+    width: 217px;
+    height: 217px;
+    justify-self: center;
+  }
+  /* ------ FORM ----- */
+  /* ------ SLOGAN ----- */
+  .slogan__hero {
+    padding: 6rem 0 25rem 0;
+    font-size: 0.8rem;
   }
 }
 
 @media (min-width: 1010px) {
+  /* ------ ONLY GET-INVOLVED PAGE ----- */
   .section__get-involved {
     gap: 5rem;
   }
@@ -333,9 +334,6 @@
     margin-left: 0;
     margin-right: 0;
   }
-  /* .card_get-involved p {
-    margin: 0 0 1rem 0;
-  } */
   .card__get-involved_top-side,
   .card__get-involved_top-side h2 {
     margin-bottom: 0rem;
