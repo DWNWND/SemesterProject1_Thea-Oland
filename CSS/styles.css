@@ -15,7 +15,8 @@ h2 {
   text-align: center;
   letter-spacing: 0.085rem;
   text-transform: uppercase;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  margin: 0;
 }
 p {
   font-family: "Inria Sans";
@@ -59,7 +60,7 @@ ul {
 .section_exhibitions,
 .card_exhibitions,
 .info-section,
-.card_info-small  {
+.card_info-small {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,12 +214,12 @@ label[for="openinghours"] {
   width: 100%;
 }
 .circular-img_wrapper,
-.circular-map {
+.circular-map, .circular-img_get-involved {
   overflow: hidden;
   border: 5px solid #f3edf9;
   border-radius: 50%;
 }
-.circular-img_wrapper {
+.circular-img_wrapper, .circular-img_get-involved {
   width: 207px;
   height: 207px;
 }
@@ -300,8 +301,10 @@ label[for="openinghours"] {
   transform: translateX(-50%);
   margin-top: 5rem;
   margin-bottom: 5rem;
+  white-space: nowrap;
 }
-.btn_text, input[value^="Send"]{
+.btn_text,
+input[value^="Send"] {
   font-family: "Lexend Zetta";
   font-weight: 500;
   font-size: 0.7rem;
@@ -450,7 +453,7 @@ label[for="openinghours"] {
   .circular-img_wrapper {
     width: 217px;
     height: 217px;
-    border: none;
+    /* border: none; */
     justify-self: center;
   }
   .card_this-month h2 {
