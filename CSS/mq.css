@@ -3,7 +3,7 @@
     background-color: #f3edf9;
   }
   .btn-background_1 {
-    background: 100% no-repeat url(../images/pixabay_dna-3539309_1280_1.jpg);
+    background: 100% no-repeat url(../images_compressed/pixabay_dna_compressed.jpg);
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -107,7 +107,7 @@
     padding: 6rem 0 25rem 0;
     font-size: 0.8rem;
   }
-  .wrapper_this-month-h1 {
+  .section__this-month h1 {
     background: none;
     color: #fff;
     box-shadow: none;
@@ -118,7 +118,7 @@
     display: flex;
     gap: 1.5rem;
   }
-  .card_this-month {
+  .card__this-month {
     display: grid;
     align-content: start;
     min-width: 240px;
@@ -132,11 +132,11 @@
     /* border: none; */
     justify-self: center;
   }
-  .card_this-month h2 {
+  .card__this-month h2 {
     margin: 1rem 0 0 0;
     text-align: left;
   }
-  .card_this-month p {
+  .card__this-month p {
     margin: 0;
     height: 115px;
   }
@@ -199,8 +199,8 @@
     min-height: 400px;
     max-height: 400px;
   }
-  .card_up-coming-info {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 98.49%);
+  .card__up-coming_info {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) 98.49%);
   }
   .align-left_in-desktop {
     text-align: left;
@@ -223,7 +223,7 @@
   .next-line_desktop {
     display: block;
   }
-  .wrapper__up-coming_quote {
+  .quote__up-coming {
     background: none;
   }
   .section__up-coming {
@@ -241,10 +241,10 @@
     margin-left: 0;
   }
   .section__visit-us_top {
-    max-width: 600px;
+    max-width: 744px;
   }
   .section__visit-us_top,
-  .section__info {
+  .section__visit-us_additional-info {
     margin-left: auto;
     margin-right: auto;
   }
@@ -261,12 +261,14 @@
   }
   .grid-area_left {
     grid-area: leftside;
+    width: 355.2px;
   }
   .circular-map {
     grid-area: map;
     align-self: center;
+    width: 345.2px;
   }
-  .section__info {
+  .section__visit-us_additional-info {
     display: grid;
     grid-template-areas:
       "1fr 1fr"
@@ -295,35 +297,36 @@
     gap: 5rem;
   }
   .card__get-involved {
-    max-width: 800px;
-    min-height: 210px;
-    max-height: 210px;
+    max-width: 720px;
+    min-height: 240px;
+    max-height: 240px;
+    gap: 0;
   }
   .card__get-involved_1,
   .card__get-involved_3 {
     border-radius: 0px 50px 0px 0px;
-    margin-left: 150px;
+    margin-left: 160px;
   }
   .card__get-involved_2 {
     border-radius: 50px 0px 0px 0px;
-    margin-right: 150px;
+    margin-right: 160px;
   }
   .circular-img__get-involved_1 {
-    top: -144px;
-    left: -150px;
+    top: -136px;
+    left: -192px;
   }
   .circular-img__get-involved_2 {
-    top: -125px;
-    left: 650px;
+    top: -118px;
+    left: 584px;
   }
   .circular-img__get-involved_3 {
-    top: -163px;
-    left: -150px;
+    top: -175px;
+    left: -192px;
   }
   .circular-img__get-involved {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
   }
   .card__get-involved_top-side {
     height: 3rem;

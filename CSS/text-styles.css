@@ -1,3 +1,4 @@
+/* ------ H1 ----- */
 h1 {
   font-family: "Koulen";
   font-size: 1.7rem;
@@ -8,9 +9,7 @@ h1 {
 .main__events-and-exhibitions h1 {
   background-color: #10092c;
   padding: 5rem 0 1rem 0;
-  color: #fff;
 }
-
 .main__visit-us h1,
 .main__contact-us h1,
 .main__get-involved h1 {
@@ -37,6 +36,14 @@ h1 {
   margin: 0 0 1rem 0;
   color: #301d79;
 }
+.h1__up-coming-events {
+  color: #fff;
+}
+.h1__exhibitions {
+  color: #fff;
+}
+
+/* ------ H2 ----- */
 h2 {
   font-family: "Koulen";
   font-size: 1.3rem;
@@ -68,69 +75,109 @@ h2 {
   margin-top: 1rem;
   padding: 0.5rem 0;
 }
+.main__visit-us h2:last-of-type {
+  margin-top: 2rem;
+}
+
+/* ------ PARAGRAPHS ----- */
 p {
   font-family: "Inria Sans";
   font-weight: 300;
   font-size: 0.85rem;
   line-height: 1.2rem;
   letter-spacing: 0.085em;
+  margin: 0;
+}
+.card_general p {
+  padding: 0 1.5rem;
+  margin: 0 0 2rem 0;
   color: #301d79;
 }
 .section__visit-us_top p {
-  margin: 0;
   text-align: center;
+}
+.card__info-small p {
+  text-align: center;
+  color: #301d79;
+  margin-top: 1.2rem;
+}
+.section__get-involved p {
+  color: #301d79;
 }
 .card__up-coming p {
   color: #fff;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  margin: 0;
 }
+
+/* ------ LINKS ----- */
 a {
   text-decoration: none;
 }
-.nav__links-general a {
+.nav__links-general a,
+.section__this-month a {
   font-family: "Lexend Zetta";
   font-size: 0.8rem;
   text-align: center;
   letter-spacing: 0.085em;
-  text-transform: uppercase;
 }
-.nav__header a {
-  color: #10092c;
+.nav__links-general a {
+  text-transform: uppercase;
 }
 .nav__up-coming-events a,
 .nav__permanent-exhibitions a {
-  text-decoration: underline;
-  padding: 0.8rem;
   display: block;
+  padding: 0.8rem;
+}
+.section__this-month a,
+.nav__up-coming-events a,
+.nav__permanent-exhibitions a,
+.card__explore a {
+  text-decoration-line: underline;
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
 }
-.nav__up-coming-events a {
+.nav__up-coming-events a,
+.section__this-month a {
   color: #fff;
 }
-.nav__permanent-exhibitions a {
+.nav__permanent-exhibitions a,
+.nav__header a {
   color: #10092c;
 }
 .section__this-month a {
-  font-family: "Lexend Zetta";
-  font-size: 0.7rem;
-  text-align: center;
   text-decoration-line: underline;
-  color: #ffffff;
 }
+
+/* ------ QUOTE AND PLACEHOLDER ----- */
 .quote,
-.form_input::placeholder {
+.form_input::placeholder,
+::placeholder {
   font-family: "Iceland";
   font-size: 1.1rem;
   letter-spacing: 0.085em;
   color: #4a4f96;
+  text-shadow: none;
 }
 .quote {
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
 }
+.card__explore .quote {
+  background: radial-gradient(#e1f2d4 52.14%, rgba(216, 212, 242, 0) 99.08%), #f3edf9;
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+  color: #301d79;
+}
+.quote__up-coming {
+  background: #000;
+  min-height: 80px;
+  max-height: 80px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ------ STYLING ----- */
 .bold {
   font-weight: 800;
 }
@@ -138,7 +185,12 @@ a {
   font-style: italic;
 }
 
-ul {
-  padding-inline-start: 0;
-  list-style-type: none;
+/* ------ SPAN----- */
+.openinghours span,
+.location span,
+.card__info-small span {
+  display: block;
+}
+.openinghours span {
+  padding-bottom: 1rem;
 }
