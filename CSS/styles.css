@@ -40,16 +40,17 @@ ul {
   background-size: cover;
   background-position: top;
 }
-.main__get-involved {
+.main__get-involved,
+.main__contact-us {
   background: 100% no-repeat url(/images_compressed/background_get-involved_compressed.jpg);
   background-size: cover;
   background-position: top;
 }
-.main__contact-us,
 .section__this-month {
   background: 100% no-repeat url(../images_compressed/hero_background_compressed.jpg);
   background-position: top;
   background-size: 200%;
+  background-color: var(--light-pink);
 }
 .main__contact-us {
   padding: 2rem;
@@ -217,7 +218,6 @@ footer {
   gap: 1rem;
   padding: 3rem 1rem 4rem 1rem;
   background: var(--almost-black);
-  min-width: 400px;
 }
 .card__explore {
   background: var(--white);
@@ -327,35 +327,27 @@ footer {
   margin-bottom: 5rem;
   white-space: nowrap;
 }
-.btn__text,
-input[value^="Send"] {
-  font-family: "Lexend Zetta";
-  font-weight: 500;
-  font-size: 0.7rem;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-  color: var(--almost-black);
-  white-space: nowrap;
-}
 .btn__background_1 {
-  background: var(--almost-black);
-  padding: 3rem 2rem;
+  background: 100% no-repeat url(../images_compressed/pixabay_dna_compressed.jpg);
+  padding: 3rem 0;
+  background-size: cover;
+  background-position: center;
 }
 .btn__background_2 {
   background: 100% no-repeat url(../images_compressed/unsplash_magnetic_compressed.jpg);
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   background-size: cover;
   background-position: center;
 }
 .btn__background_3 {
   background: 100% no-repeat url(../images_compressed/unsplash_energy_compressed.jpg);
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   background-size: cover;
   background-position: center;
 }
 .btn__visit-us {
   display: block;
-  max-width: 10rem;
+  max-width: 12rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -392,7 +384,6 @@ input[value^="Send"] {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
   max-width: 359px;
   height: 359px;
   margin-top: 2rem;

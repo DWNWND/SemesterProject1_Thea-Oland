@@ -16,7 +16,6 @@ h1 {
   color: var(--dark-purple);
   padding: 3rem 0 3rem 0;
 }
-.main__events-and-exhibitions h1,
 .main__visit-us h1,
 .main__contact-us h1,
 .main__get-involved h1,
@@ -28,7 +27,6 @@ h1 {
   background: var(--light-pink);
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   padding: 1rem;
-  min-width: 400px;
   color: var(--dark-purple);
 }
 .section__explore h1 {
@@ -56,7 +54,6 @@ h2 {
 .main__contact-us h2,
 .main__get-involved h2 {
   color: var(--dark-purple);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 0.4rem;
 }
 .card__up-coming h2,
@@ -186,7 +183,6 @@ a {
 }
 .quote {
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 10, 255, 0.25);
 }
 .card__explore .quote {
   background: radial-gradient(#e1f2d4 52.14%, rgba(216, 212, 242, 0) 99.08%), #f3edf9;
@@ -226,4 +222,23 @@ a {
   font-size: 0.7rem;
   letter-spacing: 0.085rem;
   text-transform: uppercase;
+}
+
+/* ------ BTN----- */
+.btn__text,
+input[value^="Send"],
+.btn__text-long {
+  font-family: "Lexend Zetta";
+  font-weight: 500;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: var(--almost-black);
+  white-space: nowrap;
+}
+.btn__text,
+input[value^="Send"] {
+  font-size: 0.9rem;
+}
+.btn__text-long {
+  font-size: 0.7rem;
 }

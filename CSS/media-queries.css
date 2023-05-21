@@ -2,13 +2,6 @@
   .section__this-month {
     background-color: var(--light-pink);
   }
-  .btn__background_1 {
-    background: 100% no-repeat url(../images_compressed/pixabay_dna_compressed.jpg);
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-color: var(--diffuse-pink);
-  }
 }
 @media (min-width: 450px) {
   .section__this-month {
