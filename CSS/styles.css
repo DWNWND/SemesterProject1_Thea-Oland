@@ -120,7 +120,7 @@ header {
   text-underline-offset: 2px;
 }
 .logo {
-  background: no-repeat url(../logo-btn/logo_mobile_white.png);
+  background: no-repeat url(../images_compressed/logo_mobile_white.png);
   width: 71px;
   height: 33px;
   background-size: 100%;
@@ -438,7 +438,7 @@ fieldset {
 /* ------ SLOGAN ----- */
 .slogan__cube {
   color: var(--almost-black);
-  background: 100% no-repeat url(../logo-btn/unsplash_tmp-6448fda3a9ca0.png);
+  background: 100% no-repeat url(../images_compressed/unsplash_cube.png);
   background-size: contain;
   background-position: center;
   padding: 25rem 0 5rem 0;
