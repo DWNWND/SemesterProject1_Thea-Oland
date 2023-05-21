@@ -154,14 +154,14 @@ a {
 .nav__permanent-exhibitions a,
 .nav__header a,
 .nav__footer a,
-h3 {
+.footer__heading {
   color: #10092c;
 }
 .section__this-month a {
   text-decoration-line: underline;
 }
 .nav__footer a,
-h3 {
+.footer__heading {
   display: block;
   font-family: "Koulen";
   font-size: 1.3rem;
@@ -169,10 +169,6 @@ h3 {
   text-transform: uppercase;
   white-space: nowrap;
 }
-h3 {
-  margin: 0;
-}
-
 /* ------ QUOTE AND PLACEHOLDER ----- */
 .quote,
 .form_input::placeholder,
