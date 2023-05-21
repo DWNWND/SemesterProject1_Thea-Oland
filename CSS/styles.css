@@ -35,11 +35,14 @@ ul {
   background-size: cover;
   background-position: top;
 }
-.main__contact-us {
-  padding: 2rem;
+.main__contact-us,
+.section__this-month {
   background: 100% no-repeat url(../images_compressed/hero_background_compressed.jpg);
   background-position: top;
-  background-size: cover;
+  background-size: 200%;
+}
+.main__contact-us {
+  padding: 2rem;
 }
 .menu_dropdown,
 .section__this-month,
@@ -138,7 +141,7 @@ header {
 
 /* ------ FOOTER ------ */
 footer {
-  background: 100% no-repeat url(../images_compressed/footer_background_compressed.jpg);
+  background: 100% no-repeat url(../images_compressed/background_footer_darker_compressed.jpg);
   padding: 2rem;
   background-position: top;
   background-size: cover;
@@ -186,12 +189,12 @@ label[for="openinghours"] {
 }
 .fa-brands {
   font-size: 2rem;
-  color: #301d79;
+  color: #10092c;
 }
 
 /* ------ SECTIONS------ */
 .section__this-month {
-  background: 100% no-repeat url(../images_compressed/hero_background_compressed.jpg);
+  background: 100% no-repeat url(../images_compressed/background_darker_compressed.jpg);
   background-position: top;
   background-size: 200%;
 }
