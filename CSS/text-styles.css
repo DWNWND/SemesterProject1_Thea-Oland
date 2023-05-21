@@ -117,7 +117,7 @@ p {
   font-size: 1rem;
   letter-spacing: 0.085em;
   line-height: 120%;
-  color: #ffffff;
+  color: #10092c;
 }
 
 /* ------ LINKS ----- */
@@ -152,7 +152,9 @@ a {
   color: #fff;
 }
 .nav__permanent-exhibitions a,
-.nav__header a {
+.nav__header a,
+.nav__footer a,
+h3 {
   color: #10092c;
 }
 .section__this-month a {
@@ -167,11 +169,7 @@ h3 {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.nav__footer a {
-  color: #10092c;
-}
 h3 {
-  color: #ffffff;
   margin: 0;
 }
 
