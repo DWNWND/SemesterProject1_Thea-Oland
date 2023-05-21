@@ -12,15 +12,30 @@
   footer {
     text-align: center;
   }
+  .slogan__hero {
+    padding-top: 3rem;
+  }
 }
 @media (min-width: 600px) {
   .logo_footer {
     width: 25%;
   }
 }
+@media (min-width: 700px) {
+  .logo_footer {
+    width: 25%;
+  }
+  .slogan__hero {
+    padding-bottom: 8rem;
+  }
+}
 @media (min-width: 800px) {
   .section__this-month {
     background-size: contain;
+  }
+  .slogan__hero {
+    padding-top: 1.5rem;
+    padding-bottom: 18rem;
   }
 }
 @media (min-width: 1000px) {
