@@ -146,33 +146,8 @@ footer {
   background-position: top;
   background-size: cover;
 }
-.openinghours,
-.openinghours p,
-.location p {
-  width: 100%;
-  font-family: "Iceland";
-  font-size: 1rem;
-  letter-spacing: 0.085em;
-  line-height: 120%;
-  color: #ffffff;
-}
 .nav__footer {
   margin: 2rem 0;
-}
-.nav__footer a,
-label[for="openinghours"] {
-  display: block;
-  font-family: "Koulen";
-  font-size: 1.3rem;
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.nav__footer a {
-  color: #10092c;
-}
-label[for="openinghours"] {
-  color: #ffffff;
 }
 .logo-some_footer {
   padding-top: 2rem;
