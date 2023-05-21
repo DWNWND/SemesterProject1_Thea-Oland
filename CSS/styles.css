@@ -37,6 +37,7 @@ ul {
 }
 .main__contact-us,
 .section__this-month {
+  /* background: 100% no-repeat url(../images_compressed/background_darker_compressed.jpg); */
   background: 100% no-repeat url(../images_compressed/hero_background_compressed.jpg);
   background-position: top;
   background-size: 200%;
@@ -168,11 +169,6 @@ footer {
 }
 
 /* ------ SECTIONS------ */
-.section__this-month {
-  background: 100% no-repeat url(../images_compressed/background_darker_compressed.jpg);
-  background-position: top;
-  background-size: 200%;
-}
 .section__explore {
   gap: 2rem;
   background: #f3edf9;
@@ -428,15 +424,8 @@ fieldset {
 }
 
 /* ------ SLOGAN ----- */
-.slogan__hero,
 .slogan__cube {
-  font-family: "Lexend Zetta";
-  font-size: 0.7rem;
-  letter-spacing: 0.085rem;
-  text-transform: uppercase;
-}
-.slogan__cube {
-  color: #301d79;
+  color: #10092c;
   background: 100% no-repeat url(../logo-btn/unsplash_tmp-6448fda3a9ca0.png);
   background-size: contain;
   background-position: center;
@@ -444,5 +433,6 @@ fieldset {
 }
 .slogan__hero {
   padding: 1.5rem 0 18rem 0;
-  color: #fff;
+  /* color: #FFF; */
+  color: #10092c;
 }

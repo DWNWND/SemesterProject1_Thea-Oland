@@ -220,3 +220,11 @@ h3 {
 .openinghours span {
   padding-bottom: 1rem;
 }
+/* ------ SLOGAN----- */
+.slogan__hero,
+.slogan__cube {
+  font-family: "Lexend Zetta";
+  font-size: 0.7rem;
+  letter-spacing: 0.085rem;
+  text-transform: uppercase;
+}
