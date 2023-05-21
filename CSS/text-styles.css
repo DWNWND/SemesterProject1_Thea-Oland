@@ -13,7 +13,7 @@ h1 {
 .main__visit-us h1,
 .main__contact-us h1,
 .main__get-involved h1 {
-  color: #fff;
+  color: #10092c;
   padding: 3rem 0 3rem 0;
 }
 .main__events-and-exhibitions h1,
@@ -58,6 +58,7 @@ h2 {
 .main__get-involved h2 {
   color: #301d79;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.4rem;
 }
 .card__up-coming h2,
 .card__exhibitions h2 {
@@ -75,9 +76,6 @@ h2 {
   margin-top: 1rem;
   padding: 0.5rem 0;
 }
-.main__visit-us h2:last-of-type {
-  margin-top: 2rem;
-}
 
 /* ------ PARAGRAPHS ----- */
 p {
@@ -91,18 +89,18 @@ p {
 .card_general p {
   padding: 0 1.5rem;
   margin: 0 0 2rem 0;
-  color: #301d79;
+  color: #10092c;
 }
 .section__visit-us_top p {
   text-align: center;
 }
 .card__info-small p {
   text-align: center;
-  color: #301d79;
+  color: #10092c;
   margin-top: 1.2rem;
 }
 .section__get-involved p {
-  color: #301d79;
+  color: #10092c;
 }
 .card__up-coming p {
   color: #fff;
@@ -111,12 +109,20 @@ p {
 }
 .openinghours,
 .openinghours p,
-.location p {
+.location_visit-us p,
+.openinghours_visit-us p {
   width: 100%;
   font-family: "Iceland";
   font-size: 1rem;
   letter-spacing: 0.085em;
   line-height: 120%;
+}
+.openinghours_visit-us p,
+.location_visit-us p {
+  color: #fff;
+}
+.openinghours,
+.openinghours p {
   color: #10092c;
 }
 
@@ -147,10 +153,10 @@ a {
   text-decoration-thickness: 0.5px;
   text-underline-offset: 2px;
 }
-.nav__up-coming-events a,
 .section__this-month a {
   color: #fff;
 }
+.nav__up-coming-events a,
 .nav__permanent-exhibitions a,
 .nav__header a,
 .nav__footer a,
@@ -206,12 +212,12 @@ a {
 }
 
 /* ------ SPAN----- */
-.openinghours span,
-.location span,
+.openinghours_visit-us span,
+.location_visit-us span,
 .card__info-small span {
   display: block;
 }
-.openinghours span {
+.openinghours_visit-us span {
   padding-bottom: 1rem;
 }
 /* ------ SLOGAN----- */

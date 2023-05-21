@@ -38,7 +38,7 @@
   .quote span {
     display: block;
   }
-  .location span {
+  .location_visit-us span {
     display: inline-block;
   }
   .align-left_in-desktop {
@@ -130,11 +130,9 @@
     text-align: left;
     padding: 0.5rem 0;
   }
-  .h1__up-coming-events {
-    color: #fff;
-  }
+  .h1__up-coming-events,
   .h1__exhibitions {
-    color: #3a005e;
+    color: #10092c;
   }
   .card__this-month h2 {
     margin: 1rem 0 0 0;
