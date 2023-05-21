@@ -1,3 +1,13 @@
+:root {
+  --almost-black: #10092c;
+  --dark-purple: #301d79;
+  --dark-pink: #6a4960;
+  --purple: #4a4f96;
+  --diffuse-pink: #d3becd;
+  --light-pink: #f3edf9;
+  --white: #fff;
+  --black: #000;
+}
 .hide,
 .hide-in-mobile,
 #menu_checkbox,
@@ -37,7 +47,6 @@ ul {
 }
 .main__contact-us,
 .section__this-month {
-  /* background: 100% no-repeat url(../images_compressed/background_darker_compressed.jpg); */
   background: 100% no-repeat url(../images_compressed/hero_background_compressed.jpg);
   background-position: top;
   background-size: 200%;
@@ -94,7 +103,7 @@ header {
   position: relative;
   padding: 25px;
   max-width: 100%;
-  background: #10092c;
+  background: var(--almost-black);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,7 +111,7 @@ header {
   flex-wrap: nowrap;
 }
 .btn_home {
-  color: #fff;
+  color: var(--white);
   font-family: "Iceland";
   text-transform: uppercase;
   font-size: 1rem;
@@ -121,7 +130,7 @@ header {
 }
 .menu_icon i {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
 }
 #menu_checkbox:checked ~ nav {
   display: block;
@@ -129,7 +138,7 @@ header {
 .nav__header {
   position: absolute;
   left: 0;
-  background: #d3becd;
+  background: var(--light-pink);
   top: 83px;
   width: 100%;
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.1);
@@ -137,7 +146,6 @@ header {
 .menu_dropdown {
   max-width: 100%;
   align-items: stretch;
-  /* justify-content: space-around; */
   gap: 1rem;
   flex-wrap: wrap;
   padding: 1rem 0;
@@ -168,13 +176,13 @@ footer {
 }
 .fa-brands {
   font-size: 2rem;
-  color: #10092c;
+  color: var(--almost-black);
 }
 
 /* ------ SECTIONS------ */
 .section__explore {
   gap: 2rem;
-  background: #f3edf9;
+  background: var(--light-pink);
 }
 .section__up-coming,
 .section__exhibitions {
@@ -205,14 +213,14 @@ footer {
   max-height: 560px;
 }
 .card__this-month {
-  color: #fff;
+  color: var(--white);
   gap: 1rem;
   padding: 3rem 1rem 4rem 1rem;
-  background: #10092c;
+  background: var(--almost-black);
   min-width: 400px;
 }
 .card__explore {
-  background: #fff;
+  background: var(--white);
 }
 .card__up-coming {
   min-height: 600px;
@@ -269,7 +277,7 @@ footer {
   background-position: center;
 }
 .card__info-small {
-  background: #f3edf9;
+  background: var(--light-pink);
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   padding: 2rem;
   max-width: 300px;
@@ -308,8 +316,8 @@ footer {
 /* ------ BTN ------ */
 .btn {
   padding: 1em 2em;
-  border: 2px solid #10092c;
-  background: #fff;
+  border: 2px solid var(--almost-black);
+  background: var(--white);
 }
 .btn__no-background {
   display: inline-block;
@@ -326,11 +334,11 @@ input[value^="Send"] {
   font-size: 0.7rem;
   letter-spacing: 0.085em;
   text-transform: uppercase;
-  color: #10092c;
+  color: var(--almost-black);
   white-space: nowrap;
 }
 .btn__background_1 {
-  background: #10092c;
+  background: var(--almost-black);
   padding: 3rem 2rem;
 }
 .btn__background_2 {
@@ -370,7 +378,7 @@ input[value^="Send"] {
 .circular-img_wrapper,
 .circular-img__get-involved {
   overflow: hidden;
-  border: 5px solid #f3edf9;
+  border: 5px solid var(--light-pink);
   border-radius: 50%;
 }
 .circular-img_wrapper,
@@ -390,7 +398,7 @@ input[value^="Send"] {
   margin-top: 2rem;
   filter: drop-shadow(10px 10px 10px rgba(0, 10, 255, 0.25));
   overflow: hidden;
-  border: 5px solid #f3edf9;
+  border: 5px solid var(--light-pink);
 }
 iframe {
   width: 100%;
@@ -407,7 +415,7 @@ fieldset {
 }
 .form_input {
   background: rgba(243, 237, 249, 0.9);
-  border: 3px solid #ffffff;
+  border: 3px solid var(--white);
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   width: 100%;
   height: 3rem;
@@ -417,7 +425,7 @@ fieldset {
 }
 .messagebox {
   background: rgba(243, 237, 249, 0.9);
-  border: 3px solid #ffffff;
+  border: 3px solid var(--white);
   box-shadow: 10px 10px 10px rgba(0, 10, 255, 0.25);
   width: 100%;
   height: 15rem;
@@ -429,7 +437,7 @@ fieldset {
 
 /* ------ SLOGAN ----- */
 .slogan__cube {
-  color: #10092c;
+  color: var(--almost-black);
   background: 100% no-repeat url(../logo-btn/unsplash_tmp-6448fda3a9ca0.png);
   background-size: contain;
   background-position: center;
@@ -437,6 +445,5 @@ fieldset {
 }
 .slogan__hero {
   padding: 1.5rem 0 18rem 0;
-  /* color: #FFF; */
-  color: #10092c;
+  color: var(--almost-black);
 }
