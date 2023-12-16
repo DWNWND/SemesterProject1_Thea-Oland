@@ -1,6 +1,6 @@
 #  COMMUNITY SCIENCE MUSEUM (Semester Project 1)
 
-![image](https://github.com/DWNWND/SemesterProject1_Thea-Oland/assets/126068161/f85157e7-1f24-4fc1-9ad8-6ad33f3d77c8)
+![cms-screenshot](https://github.com/DWNWND/SemesterProject1_Thea-Oland/assets/126068161/1d0f6fd7-443b-463a-be78-b7cb842ec3de)
 
 This is the second website I made during my Frontend Dev. studies at Noroff. 
 
